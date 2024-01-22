@@ -1,0 +1,1201 @@
+2023-12-20 18:38:07,911 ERROR frappe New Exception collected with id: 2023-12-20 18:38:07.590165-127.0.0.1-0a4
+Site: site2.local
+Form Dict: {}
+2023-12-20 18:38:07,935 ERROR frappe Failed to run after request hook
+Site: site2.local
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 84, in application
+    init_request(request)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 175, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/auth.py", line 37, in __init__
+    self.set_session()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/auth.py", line 73, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/auth.py", line 122, in __init__
+    self.make_session(resume=True)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/auth.py", line 210, in make_session
+    frappe.local.session_obj = Session(
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/sessions.py", line 230, in __init__
+    self.resume()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/sessions.py", line 303, in resume
+    data = self.get_session_record()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/sessions.py", line 321, in get_session_record
+    r = self.get_session_data()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/sessions.py", line 337, in get_session_data
+    data = self.get_session_data_from_db()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/sessions.py", line 362, in get_session_data_from_db
+    frappe.db.get_value(
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 509, in get_value
+    result = self.get_values(
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 606, in get_values
+    out = self._get_values_from_table(
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 835, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 201, in sql
+    self.connect()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 115, in connect
+    self._conn = self.get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 98, in get_connection
+    conn = self._get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 104, in _get_connection
+    return self.create_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 352, in __init__
+    self.connect()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 636, in connect
+    self._request_authentication()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 911, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_c91b619255899dde'@'localhost' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: -7777928797930344328
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/serve.py", line 17, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 36, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 107, in resolve_redirect
+    redirects = frappe.get_hooks("website_redirects")
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1519, in get_hooks
+    hooks = _dict(cache().get_value("app_hooks", _load_app_hooks))
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 81, in get_value
+    val = generator()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1482, in _load_app_hooks
+    apps = [app_name] if app_name else get_installed_apps(_ensure_on_bench=True)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1438, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 975, in get_global
+    return self.get_default(key, user)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 979, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 995, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
+    frappe.qb.from_(table)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 201, in sql
+    self.connect()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 115, in connect
+    self._conn = self.get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 98, in get_connection
+    conn = self._get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 104, in _get_connection
+    return self.create_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 352, in __init__
+    self.connect()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 636, in connect
+    self._request_authentication()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 911, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_c91b619255899dde'@'localhost' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: -7246609608310958455
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 113, in application
+    response = handle_exception(e)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 369, in handle_exception
+    response = get_response("message", http_status_code=http_status_code)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/serve.py", line 26, in get_response
+    response = ErrorPage(exception=e).render()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 7, in __init__
+    super().__init__(path=path, http_status_code=http_status_code)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 45, in __init__
+    self.set_template_path()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 53, in set_template_path
+    for app in frappe.get_installed_apps(frappe_last=True):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1438, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 975, in get_global
+    return self.get_default(key, user)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 979, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 995, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
+    frappe.qb.from_(table)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 201, in sql
+    self.connect()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 115, in connect
+    self._conn = self.get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 98, in get_connection
+    conn = self._get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 104, in _get_connection
+    return self.create_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 352, in __init__
+    self.connect()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 636, in connect
+    self._request_authentication()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 911, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_c91b619255899dde'@'localhost' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: -7777928797930344328
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 127, in application
+    run_after_request_hooks(request, response)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 143, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1519, in get_hooks
+    hooks = _dict(cache().get_value("app_hooks", _load_app_hooks))
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 81, in get_value
+    val = generator()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1482, in _load_app_hooks
+    apps = [app_name] if app_name else get_installed_apps(_ensure_on_bench=True)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1438, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 975, in get_global
+    return self.get_default(key, user)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 979, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 995, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
+    frappe.qb.from_(table)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 201, in sql
+    self.connect()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 115, in connect
+    self._conn = self.get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 98, in get_connection
+    conn = self._get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 104, in _get_connection
+    return self.create_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 352, in __init__
+    self.connect()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 636, in connect
+    self._request_authentication()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 911, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_c91b619255899dde'@'localhost' (using password: YES)")
+2023-12-20 18:39:54,313 ERROR frappe New Exception collected with id: 2023-12-20 18:39:53.978957-127.0.0.1-5a6
+Site: site2.local
+Form Dict: {}
+2023-12-20 18:39:54,351 ERROR frappe Failed to run after request hook
+Site: site2.local
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 84, in application
+    init_request(request)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 175, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/auth.py", line 37, in __init__
+    self.set_session()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/auth.py", line 73, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/auth.py", line 122, in __init__
+    self.make_session(resume=True)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/auth.py", line 210, in make_session
+    frappe.local.session_obj = Session(
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/sessions.py", line 230, in __init__
+    self.resume()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/sessions.py", line 303, in resume
+    data = self.get_session_record()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/sessions.py", line 321, in get_session_record
+    r = self.get_session_data()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/sessions.py", line 337, in get_session_data
+    data = self.get_session_data_from_db()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/sessions.py", line 362, in get_session_data_from_db
+    frappe.db.get_value(
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 509, in get_value
+    result = self.get_values(
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 606, in get_values
+    out = self._get_values_from_table(
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 835, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 201, in sql
+    self.connect()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 115, in connect
+    self._conn = self.get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 98, in get_connection
+    conn = self._get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 104, in _get_connection
+    return self.create_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 352, in __init__
+    self.connect()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 636, in connect
+    self._request_authentication()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 911, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_c91b619255899dde'@'localhost' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5485817916924960299
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/serve.py", line 17, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 36, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 107, in resolve_redirect
+    redirects = frappe.get_hooks("website_redirects")
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1519, in get_hooks
+    hooks = _dict(cache().get_value("app_hooks", _load_app_hooks))
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 81, in get_value
+    val = generator()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1482, in _load_app_hooks
+    apps = [app_name] if app_name else get_installed_apps(_ensure_on_bench=True)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1438, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 975, in get_global
+    return self.get_default(key, user)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 979, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 995, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
+    frappe.qb.from_(table)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 201, in sql
+    self.connect()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 115, in connect
+    self._conn = self.get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 98, in get_connection
+    conn = self._get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 104, in _get_connection
+    return self.create_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 352, in __init__
+    self.connect()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 636, in connect
+    self._request_authentication()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 911, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_c91b619255899dde'@'localhost' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5632239266019596807
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 113, in application
+    response = handle_exception(e)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 369, in handle_exception
+    response = get_response("message", http_status_code=http_status_code)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/serve.py", line 26, in get_response
+    response = ErrorPage(exception=e).render()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 7, in __init__
+    super().__init__(path=path, http_status_code=http_status_code)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 45, in __init__
+    self.set_template_path()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 53, in set_template_path
+    for app in frappe.get_installed_apps(frappe_last=True):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1438, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 975, in get_global
+    return self.get_default(key, user)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 979, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 995, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
+    frappe.qb.from_(table)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 201, in sql
+    self.connect()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 115, in connect
+    self._conn = self.get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 98, in get_connection
+    conn = self._get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 104, in _get_connection
+    return self.create_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 352, in __init__
+    self.connect()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 636, in connect
+    self._request_authentication()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 911, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_c91b619255899dde'@'localhost' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5485817916924960299
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 127, in application
+    run_after_request_hooks(request, response)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 143, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1519, in get_hooks
+    hooks = _dict(cache().get_value("app_hooks", _load_app_hooks))
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 81, in get_value
+    val = generator()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1482, in _load_app_hooks
+    apps = [app_name] if app_name else get_installed_apps(_ensure_on_bench=True)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1438, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 975, in get_global
+    return self.get_default(key, user)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 979, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 995, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
+    frappe.qb.from_(table)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 201, in sql
+    self.connect()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 115, in connect
+    self._conn = self.get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 98, in get_connection
+    conn = self._get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 104, in _get_connection
+    return self.create_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 352, in __init__
+    self.connect()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 636, in connect
+    self._request_authentication()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 911, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_c91b619255899dde'@'localhost' (using password: YES)")
+2023-12-20 18:45:04,080 ERROR frappe New Exception collected with id: 2023-12-20 18:45:03.888375-127.0.0.1-74f
+Site: site2.local
+Form Dict: {}
+2023-12-20 18:45:04,089 ERROR frappe Failed to run after request hook
+Site: site2.local
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 84, in application
+    init_request(request)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 175, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/auth.py", line 37, in __init__
+    self.set_session()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/auth.py", line 73, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/auth.py", line 122, in __init__
+    self.make_session(resume=True)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/auth.py", line 210, in make_session
+    frappe.local.session_obj = Session(
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/sessions.py", line 230, in __init__
+    self.resume()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/sessions.py", line 303, in resume
+    data = self.get_session_record()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/sessions.py", line 321, in get_session_record
+    r = self.get_session_data()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/sessions.py", line 337, in get_session_data
+    data = self.get_session_data_from_db()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/sessions.py", line 362, in get_session_data_from_db
+    frappe.db.get_value(
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 509, in get_value
+    result = self.get_values(
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 606, in get_values
+    out = self._get_values_from_table(
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 835, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 201, in sql
+    self.connect()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 115, in connect
+    self._conn = self.get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 98, in get_connection
+    conn = self._get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 104, in _get_connection
+    return self.create_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 352, in __init__
+    self.connect()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 636, in connect
+    self._request_authentication()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 911, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_c91b619255899dde'@'localhost' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 2052733067153067481
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/serve.py", line 17, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 36, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 107, in resolve_redirect
+    redirects = frappe.get_hooks("website_redirects")
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1519, in get_hooks
+    hooks = _dict(cache().get_value("app_hooks", _load_app_hooks))
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 81, in get_value
+    val = generator()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1482, in _load_app_hooks
+    apps = [app_name] if app_name else get_installed_apps(_ensure_on_bench=True)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1438, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 975, in get_global
+    return self.get_default(key, user)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 979, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 995, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
+    frappe.qb.from_(table)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 201, in sql
+    self.connect()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 115, in connect
+    self._conn = self.get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 98, in get_connection
+    conn = self._get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 104, in _get_connection
+    return self.create_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 352, in __init__
+    self.connect()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 636, in connect
+    self._request_authentication()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 911, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_c91b619255899dde'@'localhost' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: -1168096087100648513
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 113, in application
+    response = handle_exception(e)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 369, in handle_exception
+    response = get_response("message", http_status_code=http_status_code)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/serve.py", line 26, in get_response
+    response = ErrorPage(exception=e).render()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 7, in __init__
+    super().__init__(path=path, http_status_code=http_status_code)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 45, in __init__
+    self.set_template_path()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 53, in set_template_path
+    for app in frappe.get_installed_apps(frappe_last=True):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1438, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 975, in get_global
+    return self.get_default(key, user)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 979, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 995, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
+    frappe.qb.from_(table)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 201, in sql
+    self.connect()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 115, in connect
+    self._conn = self.get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 98, in get_connection
+    conn = self._get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 104, in _get_connection
+    return self.create_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 352, in __init__
+    self.connect()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 636, in connect
+    self._request_authentication()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 911, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_c91b619255899dde'@'localhost' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 2052733067153067481
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 127, in application
+    run_after_request_hooks(request, response)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 143, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1519, in get_hooks
+    hooks = _dict(cache().get_value("app_hooks", _load_app_hooks))
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 81, in get_value
+    val = generator()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1482, in _load_app_hooks
+    apps = [app_name] if app_name else get_installed_apps(_ensure_on_bench=True)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1438, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 975, in get_global
+    return self.get_default(key, user)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 979, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 995, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
+    frappe.qb.from_(table)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 201, in sql
+    self.connect()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 115, in connect
+    self._conn = self.get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 98, in get_connection
+    conn = self._get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 104, in _get_connection
+    return self.create_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 352, in __init__
+    self.connect()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 636, in connect
+    self._request_authentication()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 911, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_c91b619255899dde'@'localhost' (using password: YES)")
+2023-12-20 18:48:25,928 ERROR frappe New Exception collected with id: 2023-12-20 18:48:25.679035-127.0.0.1-c49
+Site: site2.local
+Form Dict: {}
+2023-12-20 18:48:25,940 ERROR frappe Failed to run after request hook
+Site: site2.local
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 84, in application
+    init_request(request)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 175, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/auth.py", line 37, in __init__
+    self.set_session()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/auth.py", line 73, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/auth.py", line 122, in __init__
+    self.make_session(resume=True)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/auth.py", line 210, in make_session
+    frappe.local.session_obj = Session(
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/sessions.py", line 230, in __init__
+    self.resume()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/sessions.py", line 303, in resume
+    data = self.get_session_record()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/sessions.py", line 321, in get_session_record
+    r = self.get_session_data()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/sessions.py", line 337, in get_session_data
+    data = self.get_session_data_from_db()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/sessions.py", line 362, in get_session_data_from_db
+    frappe.db.get_value(
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 509, in get_value
+    result = self.get_values(
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 606, in get_values
+    out = self._get_values_from_table(
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 835, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 201, in sql
+    self.connect()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 115, in connect
+    self._conn = self.get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 98, in get_connection
+    conn = self._get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 104, in _get_connection
+    return self.create_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 352, in __init__
+    self.connect()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 636, in connect
+    self._request_authentication()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 911, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_c91b619255899dde'@'localhost' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 7656477958881702411
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/serve.py", line 17, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 36, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 107, in resolve_redirect
+    redirects = frappe.get_hooks("website_redirects")
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1519, in get_hooks
+    hooks = _dict(cache().get_value("app_hooks", _load_app_hooks))
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 81, in get_value
+    val = generator()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1482, in _load_app_hooks
+    apps = [app_name] if app_name else get_installed_apps(_ensure_on_bench=True)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1438, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 975, in get_global
+    return self.get_default(key, user)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 979, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 995, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
+    frappe.qb.from_(table)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 201, in sql
+    self.connect()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 115, in connect
+    self._conn = self.get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 98, in get_connection
+    conn = self._get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 104, in _get_connection
+    return self.create_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 352, in __init__
+    self.connect()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 636, in connect
+    self._request_authentication()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 911, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_c91b619255899dde'@'localhost' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: -8421728259947807239
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 113, in application
+    response = handle_exception(e)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 369, in handle_exception
+    response = get_response("message", http_status_code=http_status_code)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/serve.py", line 26, in get_response
+    response = ErrorPage(exception=e).render()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 7, in __init__
+    super().__init__(path=path, http_status_code=http_status_code)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 45, in __init__
+    self.set_template_path()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 53, in set_template_path
+    for app in frappe.get_installed_apps(frappe_last=True):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1438, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 975, in get_global
+    return self.get_default(key, user)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 979, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 995, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
+    frappe.qb.from_(table)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 201, in sql
+    self.connect()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 115, in connect
+    self._conn = self.get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 98, in get_connection
+    conn = self._get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 104, in _get_connection
+    return self.create_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 352, in __init__
+    self.connect()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 636, in connect
+    self._request_authentication()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 911, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_c91b619255899dde'@'localhost' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 7656477958881702411
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 127, in application
+    run_after_request_hooks(request, response)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 143, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1519, in get_hooks
+    hooks = _dict(cache().get_value("app_hooks", _load_app_hooks))
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 81, in get_value
+    val = generator()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1482, in _load_app_hooks
+    apps = [app_name] if app_name else get_installed_apps(_ensure_on_bench=True)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1438, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 975, in get_global
+    return self.get_default(key, user)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 979, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 995, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
+    frappe.qb.from_(table)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 201, in sql
+    self.connect()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/database.py", line 115, in connect
+    self._conn = self.get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 98, in get_connection
+    conn = self._get_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 104, in _get_connection
+    return self.create_connection()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 352, in __init__
+    self.connect()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 636, in connect
+    self._request_authentication()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 911, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ubuntu/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_c91b619255899dde'@'localhost' (using password: YES)")
+2023-12-22 13:26:33,053 ERROR frappe New Exception collected with id: 2023-12-22 13:26:32.306559-127.0.0.1-df7
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Supplier","name":"new-supplier-lchvtpjesm","__islocal":1,"__unsaved":1,"owner":"naveengthamizhan@gmail.com","naming_series":"SUP-.YYYY.-","country":"India","supplier_type":"Individual","is_transporter":0,"is_internal_supplier":0,"language":"en","allow_purchase_invoice_creation_without_purchase_order":0,"allow_purchase_invoice_creation_without_purchase_receipt":0,"is_frozen":0,"disabled":0,"warn_rfqs":0,"warn_pos":0,"prevent_rfqs":0,"prevent_pos":0,"on_hold":0,"hold_type":"","__run_link_triggers":1,"supplier_name":"Bhu","supplier_group":"Local","email_id":"bhu@gmail.com","mobile_no":"9839282398","email_address":"bhu@gmail.com","mobile_number":"9839282398"}', 'cmd': 'frappe.client.save'}
+2023-12-22 13:26:57,220 ERROR frappe New Exception collected with id: 2023-12-22 13:26:57.199272-127.0.0.1-644
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Supplier","name":"new-supplier-lchvtpjesm","__islocal":1,"__unsaved":1,"owner":"naveengthamizhan@gmail.com","naming_series":"SUP-.YYYY.-","country":"India","supplier_type":"Individual","is_transporter":0,"is_internal_supplier":0,"language":"en","allow_purchase_invoice_creation_without_purchase_order":0,"allow_purchase_invoice_creation_without_purchase_receipt":0,"is_frozen":0,"disabled":0,"warn_rfqs":0,"warn_pos":0,"prevent_rfqs":0,"prevent_pos":0,"on_hold":0,"hold_type":"","__run_link_triggers":1,"supplier_name":"Bhu","supplier_group":"Local","email_id":"bhu@gmail.com","mobile_no":"9839282398","email_address":"bhu@gmail.com","mobile_number":"9839282398"}', 'cmd': 'frappe.client.save'}
+2023-12-22 13:28:23,925 ERROR frappe New Exception collected with id: 2023-12-22 13:28:23.904881-127.0.0.1-232
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Supplier","name":"new-supplier-lchvtpjesm","__islocal":1,"__unsaved":1,"owner":"naveengthamizhan@gmail.com","naming_series":"SUP-.YYYY.-","country":"India","supplier_type":"Individual","is_transporter":0,"is_internal_supplier":0,"language":"en","allow_purchase_invoice_creation_without_purchase_order":0,"allow_purchase_invoice_creation_without_purchase_receipt":0,"is_frozen":0,"disabled":0,"warn_rfqs":0,"warn_pos":0,"prevent_rfqs":0,"prevent_pos":0,"on_hold":0,"hold_type":"","supplier_name":"Bhu","supplier_group":"Local","email_id":"bhu@gmail.com","mobile_no":"9839282398","email_address":"bhu@gmail.com","mobile_number":"9839282398","represents_company":""}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2023-12-22 13:30:32,004 ERROR frappe New Exception collected with id: 2023-12-22 13:30:31.980349-127.0.0.1-e2b
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Supplier","name":"new-supplier-lchvtpjesm","__islocal":1,"__unsaved":1,"owner":"naveengthamizhan@gmail.com","naming_series":"SUP-.YYYY.-","country":"India","supplier_type":"Individual","is_transporter":0,"is_internal_supplier":0,"language":"en","allow_purchase_invoice_creation_without_purchase_order":0,"allow_purchase_invoice_creation_without_purchase_receipt":0,"is_frozen":0,"disabled":0,"warn_rfqs":0,"warn_pos":0,"prevent_rfqs":0,"prevent_pos":0,"on_hold":0,"hold_type":"","supplier_name":"Bhu","supplier_group":"Local","email_id":"bhu@gmail.com","mobile_no":"9839282398","email_address":"bhu@gmail.com","mobile_number":"9839282398","represents_company":"","accounts":[{"docstatus":0,"doctype":"Party Account","name":"new-party-account-genpsrwzjc","__islocal":1,"__unsaved":1,"owner":"naveengthamizhan@gmail.com","company":"Archimedis","parent":"new-supplier-lchvtpjesm","parentfield":"accounts","parenttype":"Supplier","idx":1,"__unedited":false,"account":"Creditors - AD"}]}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2023-12-22 13:30:43,643 ERROR frappe New Exception collected with id: 2023-12-22 13:30:43.624924-127.0.0.1-991
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Supplier","name":"new-supplier-lchvtpjesm","__islocal":1,"__unsaved":1,"owner":"naveengthamizhan@gmail.com","naming_series":"SUP-.YYYY.-","country":"India","supplier_type":"Individual","is_transporter":0,"is_internal_supplier":0,"language":"en","allow_purchase_invoice_creation_without_purchase_order":0,"allow_purchase_invoice_creation_without_purchase_receipt":0,"is_frozen":0,"disabled":0,"warn_rfqs":0,"warn_pos":0,"prevent_rfqs":0,"prevent_pos":0,"on_hold":0,"hold_type":"","supplier_name":"Bhu","supplier_group":"Local","email_id":"bhu@gmail.com","mobile_no":"9839282398","email_address":"bhu@gmail.com","mobile_number":"9839282398","represents_company":"","accounts":[{"docstatus":0,"doctype":"Party Account","name":"new-party-account-genpsrwzjc","__islocal":1,"__unsaved":1,"owner":"naveengthamizhan@gmail.com","company":"Archimedis","parent":"new-supplier-lchvtpjesm","parentfield":"accounts","parenttype":"Supplier","idx":1,"__unedited":false,"account":"Creditors - AD"}]}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2023-12-22 13:48:58,482 ERROR frappe New Exception collected with id: 2023-12-22 13:48:58.441268-127.0.0.1-806
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Supplier","name":"new-supplier-lchvtpjesm","__islocal":1,"__unsaved":1,"owner":"naveengthamizhan@gmail.com","naming_series":"SUP-.YYYY.-","country":"India","supplier_type":"Individual","is_transporter":0,"is_internal_supplier":0,"language":"en","allow_purchase_invoice_creation_without_purchase_order":0,"allow_purchase_invoice_creation_without_purchase_receipt":0,"is_frozen":0,"disabled":0,"warn_rfqs":0,"warn_pos":0,"prevent_rfqs":0,"prevent_pos":0,"on_hold":0,"hold_type":"","supplier_name":"bhu","supplier_group":"Local","email_id":"bhu@gmail.com","mobile_no":"9839282398","email_address":"bhu@gmail.com","mobile_number":"9839282398","represents_company":"","accounts":[{"docstatus":0,"doctype":"Party Account","name":"new-party-account-genpsrwzjc","__islocal":1,"__unsaved":1,"owner":"naveengthamizhan@gmail.com","company":"Archimedis","parent":"new-supplier-lchvtpjesm","parentfield":"accounts","parenttype":"Supplier","idx":1,"__unedited":false,"account":"Creditors - AD"}]}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2023-12-26 12:34:58,802 ERROR frappe New Exception collected with id: 2023-12-26 12:34:58.421252-127.0.0.1-828
+Site: site3.local
+Form Dict: {}
+2023-12-26 12:35:08,373 ERROR frappe New Exception collected with id: 2023-12-26 12:35:08.324574-127.0.0.1-254
+Site: site3.local
+Form Dict: {}
+2023-12-26 12:35:12,117 ERROR frappe New Exception collected with id: 2023-12-26 12:35:12.084016-127.0.0.1-aaa
+Site: site3.local
+Form Dict: {}
+2023-12-26 12:35:15,531 ERROR frappe New Exception collected with id: 2023-12-26 12:35:15.497970-127.0.0.1-f1c
+Site: site3.local
+Form Dict: {}
+2023-12-26 12:35:18,392 ERROR frappe New Exception collected with id: 2023-12-26 12:35:18.357278-127.0.0.1-710
+Site: site3.local
+Form Dict: {}
+2023-12-26 12:35:23,428 ERROR frappe New Exception collected with id: 2023-12-26 12:35:23.400028-127.0.0.1-9fe
+Site: site3.local
+Form Dict: {}
+2023-12-26 12:35:26,205 ERROR frappe New Exception collected with id: 2023-12-26 12:35:26.179662-127.0.0.1-87c
+Site: site3.local
+Form Dict: {}
+2023-12-27 11:23:53,064 ERROR frappe New Exception collected with id: 2023-12-27 11:23:52.824870-127.0.0.1-881
+Site: site3.local
+Form Dict: {'doctype': 'Test Manufacturing', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2023-12-27 11:24:10,684 ERROR frappe New Exception collected with id: 2023-12-27 11:24:10.568783-127.0.0.1-65f
+Site: site3.local
+Form Dict: {'doctype': 'Test Manufacturing', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2023-12-27 12:38:15,256 ERROR frappe New Exception collected with id: 2023-12-27 12:38:15.009784-127.0.0.1-6df
+Site: site3.local
+Form Dict: {'doctype': 'Test Manufacturing', 'with_parent': '1', 'cached_timestamp': '2023-12-26 21:55:18.464218', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2023-12-27 12:39:09,091 ERROR frappe New Exception collected with id: 2023-12-27 12:39:07.531922-127.0.0.1-fdd
+Site: site3.local
+Form Dict: {'doctype': 'Test Manufacturing', 'with_parent': '1', 'cached_timestamp': '2023-12-26 21:55:18.464218', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2023-12-28 11:30:18,247 ERROR frappe New Exception collected with id: 2023-12-28 11:30:17.806721-127.0.0.1-e08
+Site: site3.local
+Form Dict: {'doctype': 'Vendor', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2023-12-28 11:31:31,316 ERROR frappe New Exception collected with id: 2023-12-28 11:31:31.233600-127.0.0.1-f2f
+Site: site3.local
+Form Dict: {'doctype': 'Vendor', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2023-12-28 11:31:40,536 ERROR frappe New Exception collected with id: 2023-12-28 11:31:40.471776-127.0.0.1-f6b
+Site: site3.local
+Form Dict: {'doctype': 'Vendor', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2023-12-28 11:32:55,747 ERROR frappe New Exception collected with id: 2023-12-28 11:32:55.607579-127.0.0.1-9e1
+Site: site3.local
+Form Dict: {'doctype': 'Vendor', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2023-12-28 11:34:55,013 ERROR frappe New Exception collected with id: 2023-12-28 11:34:54.836172-127.0.0.1-ff4
+Site: site3.local
+Form Dict: {'doctype': 'Vendor', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2023-12-28 11:35:54,075 ERROR frappe New Exception collected with id: 2023-12-28 11:35:53.841478-127.0.0.1-371
+Site: site3.local
+Form Dict: {'doctype': 'Vendor', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2023-12-28 11:36:25,428 ERROR frappe New Exception collected with id: 2023-12-28 11:36:25.323832-127.0.0.1-481
+Site: site3.local
+Form Dict: {'doctype': 'Vendor', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2023-12-28 11:37:53,526 ERROR frappe New Exception collected with id: 2023-12-28 11:37:53.460485-127.0.0.1-17d
+Site: site3.local
+Form Dict: {'doctype': 'Vendor', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2023-12-28 11:38:16,406 ERROR frappe New Exception collected with id: 2023-12-28 11:38:16.339601-127.0.0.1-939
+Site: site3.local
+Form Dict: {'doctype': 'Vendor', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2023-12-28 11:39:16,140 ERROR frappe New Exception collected with id: 2023-12-28 11:39:15.910233-127.0.0.1-db2
+Site: site3.local
+Form Dict: {'doctype': 'Vendor', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2024-01-02 17:14:30,122 ERROR frappe New Exception collected with id: 2024-01-02 17:14:29.986101-127.0.0.1-8b7
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-rwyhhbpyii","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-01"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-02 17:16:56,595 ERROR frappe New Exception collected with id: 2024-01-02 17:16:56.460505-127.0.0.1-57e
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-ftjcyqbyfu","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-01"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-02 17:41:26,221 ERROR frappe New Exception collected with id: 2024-01-02 17:41:26.099311-127.0.0.1-dda
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-wiukobvxda","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-01"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-02 17:41:57,608 ERROR frappe New Exception collected with id: 2024-01-02 17:41:57.595797-127.0.0.1-ccf
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-wiukobvxda","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-01"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-02 21:15:30,879 ERROR frappe New Exception collected with id: 2024-01-02 21:15:30.630904-127.0.0.1-b1c
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2024-01-03 01:38:56,443 ERROR frappe New Exception collected with id: 2024-01-03 01:38:56.186860-127.0.0.1-d89
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2023-001","owner":"Administrator","creation":"2023-12-29 13:51:03.240917","modified":"2024-01-03 01:37:56.305313","modified_by":"Administrator","docstatus":0,"idx":0,"customer":"Naveen","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[{"name":"fd","owner":"Administrator","creation":"2023-12-29 13:51:03.240917","modified":"2024-01-03 01:37:56.305313","modified_by":"Administrator","docstatus":0,"idx":1,"item":"fd","quantity":4,"rate_per_quantity":34,"total_rate":136,"discount_percentage":0,"discount_amount":0,"discounted_rate":0,"parent":"PRO-2023-001","parentfield":"payment_table","parenttype":"Payment Order Test","doctype":"Payment Table"}],"order_date":"2024-01-03","due_date":"2024-01-11","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-03 01:40:32,542 ERROR frappe New Exception collected with id: 2024-01-03 01:40:32.378755-127.0.0.1-016
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2023-001","owner":"Administrator","creation":"2023-12-29 13:51:03.240917","modified":"2024-01-03 01:37:56.305313","modified_by":"Administrator","docstatus":0,"idx":0,"customer":"Naveen","due_date":"2024-01-11","order_date":"2024-01-03","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[{"name":"fd","owner":"Administrator","creation":"2023-12-29 13:51:03.240917","modified":"2024-01-03 01:37:56.305313","modified_by":"Administrator","docstatus":0,"idx":1,"item":"fd","quantity":4,"rate_per_quantity":34,"total_rate":136,"discount_percentage":0,"discount_amount":0,"discounted_rate":0,"parent":"PRO-2023-001","parentfield":"payment_table","parenttype":"Payment Order Test","doctype":"Payment Table"}],"__last_sync_on":"2024-01-03T05:36:58.970Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-03 01:42:28,030 ERROR frappe New Exception collected with id: 2024-01-03 01:42:27.880379-127.0.0.1-b04
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2023-001","owner":"Administrator","creation":"2023-12-29 13:51:03.240917","modified":"2024-01-03 01:37:56.305313","modified_by":"Administrator","docstatus":0,"idx":0,"customer":"Naveen","due_date":"2024-01-11","order_date":"2024-01-03","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[{"name":"fd","owner":"Administrator","creation":"2023-12-29 13:51:03.240917","modified":"2024-01-03 01:37:56.305313","modified_by":"Administrator","docstatus":0,"idx":1,"item":"fd","quantity":4,"rate_per_quantity":34,"total_rate":136,"discount_percentage":0,"discount_amount":0,"discounted_rate":0,"parent":"PRO-2023-001","parentfield":"payment_table","parenttype":"Payment Order Test","doctype":"Payment Table"}],"__last_sync_on":"2024-01-03T05:38:50.955Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-03 01:45:33,002 ERROR frappe New Exception collected with id: 2024-01-03 01:45:32.979860-127.0.0.1-da2
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2023-001","owner":"Administrator","creation":"2023-12-29 13:51:03.240917","modified":"2024-01-03 01:37:56.305313","modified_by":"Administrator","docstatus":0,"idx":0,"customer":"Naveen","due_date":"2024-01-12","order_date":"2024-01-03","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[{"name":"fd","owner":"Administrator","creation":"2023-12-29 13:51:03.240917","modified":"2024-01-03 01:37:56.305313","modified_by":"Administrator","docstatus":0,"idx":1,"item":"fd","quantity":4,"rate_per_quantity":34,"total_rate":136,"discount_percentage":0,"discount_amount":0,"discounted_rate":0,"parent":"PRO-2023-001","parentfield":"payment_table","parenttype":"Payment Order Test","doctype":"Payment Table"}],"__last_sync_on":"2024-01-03T05:40:31.025Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-03 01:48:38,886 ERROR frappe New Exception collected with id: 2024-01-03 01:48:38.715827-127.0.0.1-b89
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2023-001","owner":"Administrator","creation":"2023-12-29 13:51:03.240917","modified":"2024-01-03 01:37:56.305313","modified_by":"Administrator","docstatus":0,"idx":0,"customer":"Naveen","due_date":"2024-01-12","order_date":"2024-01-03","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[{"name":"fd","owner":"Administrator","creation":"2023-12-29 13:51:03.240917","modified":"2024-01-03 01:37:56.305313","modified_by":"Administrator","docstatus":0,"idx":1,"item":"fd","quantity":4,"rate_per_quantity":34,"total_rate":136,"discount_percentage":0,"discount_amount":0,"discounted_rate":0,"parent":"PRO-2023-001","parentfield":"payment_table","parenttype":"Payment Order Test","doctype":"Payment Table"}],"__last_sync_on":"2024-01-03T05:42:32.963Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-03 02:27:21,525 ERROR frappe New Exception collected with id: 2024-01-03 02:27:21.382195-127.0.0.1-580
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-dulixzoxcm","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-03"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-03 04:46:36,649 ERROR frappe New Exception collected with id: 2024-01-03 04:46:36.067441-127.0.0.1-e5e
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-zlixvgaalx","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-03","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-njuipgufrm","__islocal":1,"__unsaved":1,"owner":"Administrator","parent":"new-payment-order-test-zlixvgaalx","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"item":"123","quantity":21312,"discount_percentage":3,"rate_per_quantity":123,"total_rate":2621376,"discount_amount":78641.28,"discounted_rate":2542734.72}]}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-03 05:58:46,490 ERROR frappe New Exception collected with id: 2024-01-03 05:58:45.875254-127.0.0.1-c85
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-bgecvnjpob","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-03","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-zjclnfjphz","__islocal":1,"__unsaved":1,"owner":"Administrator","parent":"new-payment-order-test-bgecvnjpob","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"quantity":234,"discount_percentage":3,"rate_per_quantity":324,"total_rate":75816,"discount_amount":2274.48,"discounted_rate":73541.52,"item":"dff"}]}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-03 06:00:46,153 ERROR frappe New Exception collected with id: 2024-01-03 06:00:46.123791-127.0.0.1-09b
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-ynajfkoqvq","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-03","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-mifoycwvkf","__islocal":1,"__unsaved":1,"owner":"Administrator","parent":"new-payment-order-test-ynajfkoqvq","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"quantity":233,"discount_percentage":3,"rate_per_quantity":243,"total_rate":56619,"discount_amount":1698.57,"discounted_rate":54920.43,"item":"ewrf"}]}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-03 06:02:58,030 ERROR frappe New Exception collected with id: 2024-01-03 06:02:57.960870-127.0.0.1-3b8
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-zakjtcwdze","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-03","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-ufeymkusiw","__islocal":1,"__unsaved":1,"owner":"Administrator","parent":"new-payment-order-test-zakjtcwdze","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"quantity":234,"discount_percentage":3,"rate_per_quantity":234,"total_rate":54756,"discount_amount":1642.68,"discounted_rate":53113.32,"item":"ewrf"}]}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-03 06:07:30,354 ERROR frappe New Exception collected with id: 2024-01-03 06:07:30.177961-127.0.0.1-0aa
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-cginexqhfe","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-03","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-kippcathvg","__islocal":1,"__unsaved":1,"owner":"Administrator","parent":"new-payment-order-test-cginexqhfe","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"quantity":343,"discount_percentage":3,"rate_per_quantity":23,"total_rate":7889,"discount_amount":236.67,"discounted_rate":7652.33,"item":"3"}],"due_date":"2024-01-05"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-03 06:10:53,084 ERROR frappe New Exception collected with id: 2024-01-03 06:10:52.567269-127.0.0.1-93e
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-cginexqhfe","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-03","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-kippcathvg","__islocal":1,"__unsaved":1,"owner":"Administrator","parent":"new-payment-order-test-cginexqhfe","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"quantity":343,"discount_percentage":3,"rate_per_quantity":23,"total_rate":7889,"discount_amount":236.67,"discounted_rate":7652.33,"item":"3"}],"due_date":"2024-01-05"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-03 06:19:17,422 ERROR frappe New Exception collected with id: 2024-01-03 06:19:17.266891-127.0.0.1-011
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-cginexqhfe","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-03","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-kippcathvg","__islocal":1,"__unsaved":1,"owner":"Administrator","parent":"new-payment-order-test-cginexqhfe","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"quantity":343,"discount_percentage":3,"rate_per_quantity":23,"total_rate":7889,"discount_amount":236.67,"discounted_rate":7652.33,"item":"3"}],"due_date":"2024-01-05"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-03 06:35:10,777 ERROR frappe New Exception collected with id: 2024-01-03 06:35:10.363562-127.0.0.1-2b6
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-ncztuasmrp","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-03","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-inczaqrwuq","__islocal":1,"__unsaved":1,"owner":"Administrator","parent":"new-payment-order-test-ncztuasmrp","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"quantity":232,"discount_percentage":3,"rate_per_quantity":233,"total_rate":54056,"discount_amount":1621.68,"discounted_rate":52434.32,"item":"fds"}],"due_date":"2024-01-05"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-03 06:38:52,313 ERROR frappe New Exception collected with id: 2024-01-03 06:38:52.149210-127.0.0.1-1ff
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-ncztuasmrp","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-03","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-inczaqrwuq","__islocal":1,"__unsaved":1,"owner":"Administrator","parent":"new-payment-order-test-ncztuasmrp","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"quantity":232,"discount_percentage":3,"rate_per_quantity":233,"total_rate":54056,"discount_amount":1621.68,"discounted_rate":52434.32,"item":"fds"}],"due_date":"2024-01-05"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-03 06:39:30,371 ERROR frappe New Exception collected with id: 2024-01-03 06:39:30.138472-127.0.0.1-5be
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-ncztuasmrp","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-03","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-inczaqrwuq","__islocal":1,"__unsaved":1,"owner":"Administrator","parent":"new-payment-order-test-ncztuasmrp","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"quantity":232,"discount_percentage":3,"rate_per_quantity":233,"total_rate":54056,"discount_amount":1621.68,"discounted_rate":52434.32,"item":"fds"}],"due_date":"2024-01-05"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-03 06:41:55,744 ERROR frappe New Exception collected with id: 2024-01-03 06:41:55.480055-127.0.0.1-c6e
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-ncztuasmrp","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-03","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-inczaqrwuq","__islocal":1,"__unsaved":1,"owner":"Administrator","parent":"new-payment-order-test-ncztuasmrp","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"quantity":232,"discount_percentage":3,"rate_per_quantity":233,"total_rate":54056,"discount_amount":1621.68,"discounted_rate":52434.32,"item":"fds"}],"due_date":"2024-01-05"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-03 06:52:11,897 ERROR frappe New Exception collected with id: 2024-01-03 06:52:11.497285-127.0.0.1-697
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-sfnideuuex","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-03","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-bueuedcqhx","__islocal":1,"__unsaved":1,"owner":"Administrator","parent":"new-payment-order-test-sfnideuuex","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"quantity":1232,"discount_percentage":2,"rate_per_quantity":233,"total_rate":287056,"discount_amount":5741.12,"discounted_rate":281314.88,"item":"fdsg"}]}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-03 06:52:29,469 ERROR frappe New Exception collected with id: 2024-01-03 06:52:29.440052-127.0.0.1-31a
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-sfnideuuex","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-03","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-bueuedcqhx","__islocal":1,"__unsaved":1,"owner":"Administrator","parent":"new-payment-order-test-sfnideuuex","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"quantity":1232,"discount_percentage":2,"rate_per_quantity":233,"total_rate":287056,"discount_amount":5741.12,"discounted_rate":281314.88,"item":"fdsg"}],"due_date":"2024-01-04"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-03 06:53:42,941 ERROR frappe New Exception collected with id: 2024-01-03 06:53:42.911637-127.0.0.1-2f9
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-sfnideuuex","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-03","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-bueuedcqhx","__islocal":1,"__unsaved":1,"owner":"Administrator","parent":"new-payment-order-test-sfnideuuex","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"quantity":1232,"discount_percentage":2,"rate_per_quantity":233,"total_rate":287056,"discount_amount":5741.12,"discounted_rate":281314.88,"item":"fdsg"}],"due_date":"2024-01-04"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-04 10:47:26,182 ERROR frappe New Exception collected with id: 2024-01-04 10:47:26.010268-127.0.0.1-d48
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-hcjtjvrycl","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-04"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-04 10:47:52,944 ERROR frappe New Exception collected with id: 2024-01-04 10:47:52.821172-127.0.0.1-908
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-hcjtjvrycl","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-04"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-04 10:49:49,242 ERROR frappe New Exception collected with id: 2024-01-04 10:49:49.118137-127.0.0.1-64d
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-durmrtbqeq","__islocal":1,"__unsaved":1,"owner":"Administrator","order_date":"2024-01-04"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-04 12:07:25,963 ERROR frappe New Exception collected with id: 2024-01-04 12:07:25.268521-127.0.0.1-ea4
+Site: site3.local
+Form Dict: {'doctype': 'Payment Invoice', 'with_parent': '1', 'cached_timestamp': '2024-01-03 04:45:50.382661', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2024-01-04 12:12:00,095 ERROR frappe New Exception collected with id: 2024-01-04 12:11:59.733549-127.0.0.1-693
+Site: site3.local
+Form Dict: {'doctype': 'Payment Invoice', 'name': 'Invoice-2024-020', 'cmd': 'frappe.desk.form.save.cancel'}
+2024-01-04 12:27:12,467 ERROR frappe New Exception collected with id: 2024-01-04 12:27:12.286896-127.0.0.1-1ee
+Site: site3.local
+Form Dict: {'doctype': 'Payment Invoice', 'name': 'Invoice-2024-020', 'cmd': 'frappe.desk.form.save.cancel'}
+2024-01-04 14:41:46,066 ERROR frappe New Exception collected with id: 2024-01-04 14:41:44.963713-127.0.0.1-df9
+Site: site3.local
+Form Dict: {'doctype': 'Payment Invoice', 'doc': 'PRO-2024-024', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}

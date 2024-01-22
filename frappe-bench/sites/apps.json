@@ -1,0 +1,41 @@
+{
+    "frappe": {
+        "resolution": {
+            "commit_hash": null,
+            "branch": null
+        },
+        "required": [],
+        "idx": 1,
+        "version": "14.60.0"
+    },
+    "erpnext": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "8657ba374a9f7e43279eb71104e29b0be53e3bf0",
+            "branch": "version-14"
+        },
+        "required": [],
+        "idx": 2,
+        "version": "14.55.0"
+    },
+    "naveeng": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "bce839da06dae4c464ca3503f6e3a7a0947ada53",
+            "branch": "master"
+        },
+        "required": [],
+        "idx": 5,
+        "version": "0.0.1"
+    },
+    "library_management": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "5e6aeab58932b1f581c213bbb792fa18bd1afe41",
+            "branch": "master"
+        },
+        "required": [],
+        "idx": 4,
+        "version": "0.0.1"
+    }
+}

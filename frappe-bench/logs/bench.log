@@ -1,0 +1,287 @@
+2023-12-20 18:11:04,054 DEBUG cd frappe-bench && python3 -m venv env
+2023-12-20 18:11:07,568 DEBUG cd frappe-bench && /home/ubuntu/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2023-12-20 18:11:10,667 DEBUG cd frappe-bench && /home/ubuntu/frappe-bench/env/bin/python -m pip install --quiet wheel
+2023-12-20 18:11:12,681 LOG Getting frappe
+2023-12-20 18:11:12,681 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-14 --depth 1 --origin upstream
+2023-12-20 18:11:18,063 LOG Installing frappe
+2023-12-20 18:11:18,064 DEBUG cd /home/ubuntu/frappe-bench && /home/ubuntu/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ubuntu/frappe-bench/apps/frappe 
+2023-12-20 18:11:49,740 DEBUG cd /home/ubuntu/frappe-bench/apps/frappe && yarn install
+2023-12-20 18:12:03,036 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-12-20 18:12:03,037 DEBUG cd frappe-bench && bench build
+2023-12-20 18:12:03,163 INFO /usr/local/bin/bench build
+2023-12-20 18:12:18,756 LOG setting up backups
+2023-12-20 18:12:18,847 LOG backups were set up
+2023-12-20 18:12:18,848 INFO Bench frappe-bench initialized
+2023-12-20 18:12:54,476 INFO /usr/local/bin/bench new-site site1.local
+2023-12-20 18:14:05,772 INFO /usr/local/bin/bench new-site site2.local
+2023-12-20 18:14:34,496 INFO /usr/local/bin/bench new-site site3.local
+2023-12-20 18:18:42,575 INFO /usr/local/bin/bench get-app https://github.com/frappe/erpnext.git --branch version-14
+2023-12-20 18:18:42,588 LOG Getting erpnext
+2023-12-20 18:18:42,588 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2023-12-20 18:18:49,184 LOG Installing erpnext
+2023-12-20 18:18:49,272 DEBUG cd /home/ubuntu/frappe-bench && /home/ubuntu/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ubuntu/frappe-bench/apps/erpnext 
+2023-12-20 18:18:55,245 DEBUG cd /home/ubuntu/frappe-bench/apps/erpnext && yarn install
+2023-12-20 18:18:55,975 DEBUG bench build --app erpnext
+2023-12-20 18:18:56,069 INFO /usr/local/bin/bench build --app erpnext
+2023-12-20 18:19:02,329 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-12-20 18:19:45,078 INFO /usr/local/bin/bench --site site3.local install-app erpnext
+2023-12-20 18:27:49,674 INFO /usr/local/bin/bench start
+2023-12-20 18:27:50,001 INFO /usr/local/bin/bench watch
+2023-12-20 18:27:50,006 INFO /usr/local/bin/bench serve --port 8000
+2023-12-20 18:27:50,013 INFO /usr/local/bin/bench worker
+2023-12-20 18:27:50,015 INFO /usr/local/bin/bench schedule
+2023-12-20 18:39:33,030 INFO /usr/local/bin/bench start
+2023-12-20 18:39:33,495 INFO /usr/local/bin/bench serve --port 8000
+2023-12-20 18:39:33,538 INFO /usr/local/bin/bench watch
+2023-12-20 18:39:33,560 INFO /usr/local/bin/bench worker
+2023-12-20 18:39:33,602 INFO /usr/local/bin/bench schedule
+2023-12-20 18:43:10,475 INFO /usr/local/bin/bench start
+2023-12-20 18:43:10,896 INFO /usr/local/bin/bench schedule
+2023-12-20 18:43:10,904 INFO /usr/local/bin/bench watch
+2023-12-20 18:43:10,927 INFO /usr/local/bin/bench serve --port 8000
+2023-12-20 18:43:10,975 INFO /usr/local/bin/bench worker
+2023-12-20 18:44:29,081 INFO /usr/local/bin/bench start
+2023-12-20 18:44:29,401 INFO /usr/local/bin/bench watch
+2023-12-20 18:44:29,404 INFO /usr/local/bin/bench serve --port 8000
+2023-12-20 18:44:29,430 INFO /usr/local/bin/bench schedule
+2023-12-20 18:44:29,462 INFO /usr/local/bin/bench worker
+2023-12-20 18:47:47,204 INFO /usr/local/bin/bench start
+2023-12-20 18:47:47,477 INFO /usr/local/bin/bench schedule
+2023-12-20 18:47:47,478 INFO /usr/local/bin/bench serve --port 8000
+2023-12-20 18:47:47,482 INFO /usr/local/bin/bench worker
+2023-12-20 18:47:47,487 INFO /usr/local/bin/bench watch
+2023-12-20 18:52:37,321 INFO /usr/local/bin/bench start
+2023-12-20 18:52:37,775 INFO /usr/local/bin/bench schedule
+2023-12-20 18:52:37,788 INFO /usr/local/bin/bench watch
+2023-12-20 18:52:37,790 INFO /usr/local/bin/bench serve --port 8000
+2023-12-20 18:52:37,794 INFO /usr/local/bin/bench worker
+2023-12-21 12:00:02,737 INFO /usr/local/bin/bench --verbose --site all backup
+2023-12-22 09:19:45,163 INFO /usr/local/bin/bench start
+2023-12-22 09:19:45,766 INFO /usr/local/bin/bench worker
+2023-12-22 09:19:45,767 INFO /usr/local/bin/bench serve --port 8000
+2023-12-22 09:19:45,772 INFO /usr/local/bin/bench schedule
+2023-12-22 09:19:45,773 INFO /usr/local/bin/bench watch
+2023-12-22 12:00:02,104 INFO /usr/local/bin/bench --verbose --site all backup
+2023-12-23 12:00:02,584 INFO /usr/local/bin/bench --verbose --site all backup
+2023-12-24 10:52:35,163 INFO /usr/local/bin/bench start
+2023-12-24 10:52:35,461 INFO /usr/local/bin/bench watch
+2023-12-24 10:52:35,464 INFO /usr/local/bin/bench serve --port 8000
+2023-12-24 10:52:35,479 INFO /usr/local/bin/bench worker
+2023-12-24 10:52:35,493 INFO /usr/local/bin/bench schedule
+2023-12-24 12:00:02,067 INFO /usr/local/bin/bench --verbose --site all backup
+2023-12-26 11:09:03,177 INFO /usr/local/bin/bench start
+2023-12-26 11:09:03,475 INFO /usr/local/bin/bench serve --port 8000
+2023-12-26 11:09:03,490 INFO /usr/local/bin/bench worker
+2023-12-26 11:09:03,490 INFO /usr/local/bin/bench schedule
+2023-12-26 11:09:03,514 INFO /usr/local/bin/bench watch
+2023-12-26 12:00:02,178 INFO /usr/local/bin/bench --verbose --site all backup
+2023-12-26 12:20:54,754 INFO /usr/local/bin/bench new-app library_management
+2023-12-26 12:20:54,758 LOG creating new app library_management
+2023-12-26 12:24:31,547 LOG Installing library_management
+2023-12-26 12:24:31,548 DEBUG cd /home/ubuntu/frappe-bench && /home/ubuntu/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ubuntu/frappe-bench/apps/library_management 
+2023-12-26 12:24:34,697 DEBUG bench build --app library_management
+2023-12-26 12:24:34,799 INFO /usr/local/bin/bench build --app library_management
+2023-12-26 12:24:40,612 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-12-26 12:25:38,069 INFO /usr/local/bin/bench start
+2023-12-26 12:25:38,357 INFO /usr/local/bin/bench worker
+2023-12-26 12:25:38,359 INFO /usr/local/bin/bench serve --port 8000
+2023-12-26 12:25:38,360 INFO /usr/local/bin/bench watch
+2023-12-26 12:25:38,376 INFO /usr/local/bin/bench schedule
+2023-12-26 12:30:30,348 INFO /usr/local/bin/bench new-app my_app_name
+2023-12-26 12:30:30,354 LOG creating new app my_app_name
+2023-12-26 12:32:47,418 LOG Installing my_app_name
+2023-12-26 12:32:47,419 DEBUG cd /home/ubuntu/frappe-bench && /home/ubuntu/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ubuntu/frappe-bench/apps/my_app_name 
+2023-12-26 12:32:50,422 DEBUG bench build --app my_app_name
+2023-12-26 12:32:50,510 INFO /usr/local/bin/bench build --app my_app_name
+2023-12-26 12:32:55,774 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-12-26 12:35:54,195 INFO /usr/local/bin/bench start
+2023-12-26 12:35:54,446 INFO /usr/local/bin/bench worker
+2023-12-26 12:35:54,448 INFO /usr/local/bin/bench schedule
+2023-12-26 12:35:54,453 INFO /usr/local/bin/bench watch
+2023-12-26 12:35:54,460 INFO /usr/local/bin/bench serve --port 8000
+2023-12-26 12:52:37,785 INFO /usr/local/bin/bench --site naveen.1 install-app naveen
+2023-12-26 12:53:04,051 INFO /usr/local/bin/bench --site naveen install-app naveen
+2023-12-26 12:58:29,401 INFO /usr/local/bin/bench --site your_site_name uninstall-app my_app_name
+2023-12-26 12:59:34,926 INFO /usr/local/bin/bench remove-app my_app_name
+2023-12-26 12:59:35,032 INFO /usr/local/bin/bench --site all list-apps --format json
+2023-12-26 12:59:35,957 INFO /usr/local/bin/bench --site site2.local list-apps
+2023-12-26 12:59:36,601 WARNING /usr/local/bin/bench remove-app my_app_name executed with exit code 1
+2023-12-26 13:00:51,712 INFO /usr/local/bin/bench remove-app my_app_name
+2023-12-26 13:00:51,802 INFO /usr/local/bin/bench --site all list-apps --format json
+2023-12-26 13:00:52,475 INFO /usr/local/bin/bench --site site2.local list-apps
+2023-12-26 13:00:53,055 WARNING /usr/local/bin/bench remove-app my_app_name executed with exit code 1
+2023-12-26 13:02:35,488 INFO /usr/local/bin/bench new-app NaveenG
+2023-12-26 13:02:35,491 LOG creating new app naveeng
+2023-12-26 13:04:23,797 LOG Installing naveeng
+2023-12-26 13:04:23,799 DEBUG cd /home/ubuntu/frappe-bench && /home/ubuntu/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ubuntu/frappe-bench/apps/naveeng 
+2023-12-26 13:04:27,114 DEBUG bench build --app naveeng
+2023-12-26 13:04:27,199 INFO /usr/local/bin/bench build --app naveeng
+2023-12-26 13:04:30,472 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-12-26 13:10:47,916 INFO /usr/local/bin/bench --site site5.local install-app naveeng
+2023-12-26 13:11:03,109 INFO /usr/local/bin/bench --site site4.local install-app naveeng
+2023-12-26 13:11:13,438 INFO /usr/local/bin/bench --site site3.local install-app naveeng
+2023-12-26 13:12:35,519 INFO /usr/local/bin/bench start
+2023-12-26 13:12:35,791 INFO /usr/local/bin/bench serve --port 8000
+2023-12-26 13:12:35,791 INFO /usr/local/bin/bench watch
+2023-12-26 13:12:35,805 INFO /usr/local/bin/bench schedule
+2023-12-26 13:12:35,816 INFO /usr/local/bin/bench worker
+2023-12-26 13:50:49,890 INFO /usr/local/bin/bench start
+2023-12-26 13:50:50,322 INFO /usr/local/bin/bench serve --port 8000
+2023-12-26 13:50:50,373 INFO /usr/local/bin/bench watch
+2023-12-26 13:50:50,380 INFO /usr/local/bin/bench schedule
+2023-12-26 13:50:50,394 INFO /usr/local/bin/bench worker
+2023-12-27 11:18:24,053 INFO /usr/local/bin/bench start
+2023-12-27 11:18:24,406 INFO /usr/local/bin/bench serve --port 8000
+2023-12-27 11:18:24,416 INFO /usr/local/bin/bench schedule
+2023-12-27 11:18:24,428 INFO /usr/local/bin/bench worker
+2023-12-27 11:18:24,436 INFO /usr/local/bin/bench watch
+2023-12-27 12:00:02,391 INFO /usr/local/bin/bench --verbose --site all backup
+2023-12-27 16:00:55,251 INFO /usr/local/bin/bench start
+2023-12-27 16:00:55,793 INFO /usr/local/bin/bench serve --port 8000
+2023-12-27 16:00:55,850 INFO /usr/local/bin/bench worker
+2023-12-27 16:00:55,853 INFO /usr/local/bin/bench watch
+2023-12-27 16:00:55,859 INFO /usr/local/bin/bench schedule
+2023-12-28 10:26:51,521 INFO /usr/local/bin/bench start
+2023-12-28 10:26:51,762 INFO /usr/local/bin/bench schedule
+2023-12-28 10:26:51,765 INFO /usr/local/bin/bench serve --port 8000
+2023-12-28 10:26:51,765 INFO /usr/local/bin/bench watch
+2023-12-28 10:26:51,775 INFO /usr/local/bin/bench worker
+2023-12-28 11:38:29,123 INFO /usr/local/bin/bench start
+2023-12-28 11:38:29,573 INFO /usr/local/bin/bench serve --port 8000
+2023-12-28 11:38:29,598 INFO /usr/local/bin/bench schedule
+2023-12-28 11:38:29,657 INFO /usr/local/bin/bench watch
+2023-12-28 11:38:29,658 INFO /usr/local/bin/bench worker
+2023-12-28 12:00:02,291 INFO /usr/local/bin/bench --verbose --site all backup
+2023-12-28 14:19:26,370 INFO /usr/local/bin/bench mariadb
+2023-12-28 18:00:01,902 INFO /usr/local/bin/bench --verbose --site all backup
+2023-12-29 12:00:02,553 INFO /usr/local/bin/bench --verbose --site all backup
+2023-12-30 12:00:02,413 INFO /usr/local/bin/bench --verbose --site all backup
+2023-12-31 12:00:02,328 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-01 12:00:01,586 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-01 18:00:02,222 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-02 12:00:01,899 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-02 14:17:35,044 INFO /usr/local/bin/bench start
+2024-01-02 14:17:35,310 INFO /usr/local/bin/bench serve --port 8000
+2024-01-02 14:17:35,315 INFO /usr/local/bin/bench watch
+2024-01-02 14:17:35,323 INFO /usr/local/bin/bench worker
+2024-01-02 14:17:35,326 INFO /usr/local/bin/bench schedule
+2024-01-02 18:00:02,322 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-03 00:00:02,102 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-03 06:00:01,936 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-04 12:00:02,198 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-04 18:00:01,814 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-05 12:00:02,361 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-05 18:00:02,220 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-06 12:00:03,249 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-08 11:20:14,055 INFO /usr/local/bin/bench start
+2024-01-08 11:20:14,362 INFO /usr/local/bin/bench worker
+2024-01-08 11:20:14,362 INFO /usr/local/bin/bench watch
+2024-01-08 11:20:14,369 INFO /usr/local/bin/bench serve --port 8000
+2024-01-08 11:20:14,372 INFO /usr/local/bin/bench schedule
+2024-01-08 12:00:02,227 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-08 18:00:01,528 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-09 12:00:01,829 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-09 12:04:14,916 INFO /usr/local/bin/bench mariadb
+2024-01-09 12:22:54,841 INFO /usr/local/bin/bench maridb
+2024-01-09 12:23:02,762 INFO /usr/local/bin/bench mariadb
+2024-01-09 12:33:47,584 INFO /usr/local/bin/bench mariadb
+2024-01-09 13:03:55,995 INFO /usr/local/bin/bench mariadb
+2024-01-09 13:04:27,243 INFO /usr/local/bin/bench mariadb
+2024-01-09 18:00:01,434 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-10 12:00:02,313 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-12 12:00:01,655 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-17 11:12:12,666 INFO /usr/local/bin/bench start
+2024-01-17 11:12:13,119 INFO /usr/local/bin/bench serve --port 8000
+2024-01-17 11:12:13,123 INFO /usr/local/bin/bench schedule
+2024-01-17 11:12:13,142 INFO /usr/local/bin/bench watch
+2024-01-17 11:12:13,156 INFO /usr/local/bin/bench worker
+2024-01-17 11:12:58,844 INFO /usr/local/bin/bench start
+2024-01-17 11:12:59,242 INFO /usr/local/bin/bench serve --port 8000
+2024-01-17 11:12:59,267 INFO /usr/local/bin/bench watch
+2024-01-17 11:12:59,284 INFO /usr/local/bin/bench schedule
+2024-01-17 11:12:59,294 INFO /usr/local/bin/bench worker
+2024-01-17 11:13:22,613 INFO /usr/local/bin/bench start
+2024-01-17 11:13:22,946 INFO /usr/local/bin/bench schedule
+2024-01-17 11:13:22,957 INFO /usr/local/bin/bench worker
+2024-01-17 11:13:22,967 INFO /usr/local/bin/bench watch
+2024-01-17 11:13:23,000 INFO /usr/local/bin/bench serve --port 8000
+2024-01-17 11:13:53,642 INFO /usr/local/bin/bench start
+2024-01-17 11:13:53,989 INFO /usr/local/bin/bench serve --port 8000
+2024-01-17 11:13:53,996 INFO /usr/local/bin/bench watch
+2024-01-17 11:13:54,001 INFO /usr/local/bin/bench worker
+2024-01-17 11:13:54,012 INFO /usr/local/bin/bench schedule
+2024-01-17 11:14:29,968 INFO /usr/local/bin/bench start
+2024-01-17 11:14:30,355 INFO /usr/local/bin/bench watch
+2024-01-17 11:14:30,366 INFO /usr/local/bin/bench schedule
+2024-01-17 11:14:30,368 INFO /usr/local/bin/bench serve --port 8000
+2024-01-17 11:14:30,375 INFO /usr/local/bin/bench worker
+2024-01-17 11:21:43,547 INFO /usr/local/bin/bench start
+2024-01-17 11:21:43,806 INFO /usr/local/bin/bench serve --port 8000
+2024-01-17 11:21:43,815 INFO /usr/local/bin/bench worker
+2024-01-17 11:21:43,815 INFO /usr/local/bin/bench watch
+2024-01-17 11:21:43,816 INFO /usr/local/bin/bench schedule
+2024-01-17 11:22:40,374 INFO /usr/local/bin/bench start
+2024-01-17 11:22:40,945 INFO /usr/local/bin/bench watch
+2024-01-17 11:22:40,957 INFO /usr/local/bin/bench schedule
+2024-01-17 11:22:41,043 INFO /usr/local/bin/bench serve --port 8000
+2024-01-17 11:22:41,090 INFO /usr/local/bin/bench worker
+2024-01-17 11:24:06,126 INFO /usr/local/bin/bench mariadb
+2024-01-17 11:24:22,910 INFO /usr/local/bin/bench mariadb
+2024-01-17 11:24:51,870 INFO /usr/local/bin/bench restart
+2024-01-17 11:24:51,912 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-01-17 11:24:52,149 INFO A newer version of bench is available: 5.19.0 → 5.20.0
+2024-01-17 11:25:15,044 INFO /usr/local/bin/bench start
+2024-01-17 11:25:15,267 INFO /usr/local/bin/bench serve --port 8000
+2024-01-17 11:25:15,268 INFO /usr/local/bin/bench watch
+2024-01-17 11:25:15,276 INFO /usr/local/bin/bench schedule
+2024-01-17 11:25:15,287 INFO /usr/local/bin/bench worker
+2024-01-17 11:26:20,670 INFO /usr/local/bin/bench reinstall --site site3.local
+2024-01-17 11:26:33,862 INFO /usr/local/bin/bench reinstall site3.local
+2024-01-17 11:26:42,556 INFO /usr/local/bin/bench reinstall --help
+2024-01-17 11:27:05,421 INFO /usr/local/bin/bench reinstall
+2024-01-17 11:29:07,187 INFO /usr/local/bin/bench start
+2024-01-17 11:29:07,387 INFO /usr/local/bin/bench schedule
+2024-01-17 11:29:07,392 INFO /usr/local/bin/bench serve --port 8000
+2024-01-17 11:29:07,396 INFO /usr/local/bin/bench worker
+2024-01-17 11:29:07,401 INFO /usr/local/bin/bench watch
+2024-01-17 11:35:55,093 INFO /usr/local/bin/bench start
+2024-01-17 11:35:55,366 INFO /usr/local/bin/bench serve --port 8000
+2024-01-17 11:35:55,367 INFO /usr/local/bin/bench watch
+2024-01-17 11:35:55,380 INFO /usr/local/bin/bench schedule
+2024-01-17 11:35:55,390 INFO /usr/local/bin/bench worker
+2024-01-17 11:37:48,337 INFO /usr/local/bin/bench start
+2024-01-17 11:37:48,530 INFO /usr/local/bin/bench worker
+2024-01-17 11:37:48,533 INFO /usr/local/bin/bench watch
+2024-01-17 11:37:48,538 INFO /usr/local/bin/bench serve --port 8000
+2024-01-17 11:37:48,563 INFO /usr/local/bin/bench schedule
+2024-01-17 11:43:19,269 INFO /usr/local/bin/bench start
+2024-01-17 11:43:19,570 INFO /usr/local/bin/bench watch
+2024-01-17 11:43:19,570 INFO /usr/local/bin/bench serve --port 8000
+2024-01-17 11:43:19,575 INFO /usr/local/bin/bench schedule
+2024-01-17 11:43:19,577 INFO /usr/local/bin/bench worker
+2024-01-17 11:50:38,504 INFO /usr/local/bin/bench new-app Library_Management
+2024-01-17 11:50:38,512 LOG creating new app library_management
+2024-01-17 11:51:51,002 LOG Installing library_management
+2024-01-17 11:51:51,004 DEBUG cd /home/ubuntu/frappe-bench && /home/ubuntu/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ubuntu/frappe-bench/apps/library_management 
+2024-01-17 11:51:53,797 DEBUG bench build --app library_management
+2024-01-17 11:51:53,870 INFO /usr/local/bin/bench build --app library_management
+2024-01-17 11:51:55,788 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-01-17 11:51:56,011 INFO A newer version of bench is available: 5.19.0 → 5.20.0
+2024-01-17 11:53:49,459 INFO /usr/local/bin/bench --site site3.local install-app library_management
+2024-01-17 11:56:26,616 INFO /usr/local/bin/bench start
+2024-01-17 11:56:26,847 INFO /usr/local/bin/bench watch
+2024-01-17 11:56:26,855 INFO /usr/local/bin/bench worker
+2024-01-17 11:56:26,855 INFO /usr/local/bin/bench serve --port 8000
+2024-01-17 11:56:26,861 INFO /usr/local/bin/bench schedule
+2024-01-17 12:00:01,435 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-17 18:00:01,454 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-18 00:00:01,671 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-19 12:00:01,998 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-20 16:00:12,281 INFO /usr/local/bin/bench start
+2024-01-20 16:00:12,594 INFO /usr/local/bin/bench watch
+2024-01-20 16:00:12,596 INFO /usr/local/bin/bench schedule
+2024-01-20 16:00:12,599 INFO /usr/local/bin/bench worker
+2024-01-20 16:00:12,600 INFO /usr/local/bin/bench serve --port 8000
+2024-01-20 18:00:02,204 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-21 12:00:02,198 INFO /usr/local/bin/bench --verbose --site all backup
+2024-01-22 12:00:01,694 INFO /usr/local/bin/bench --verbose --site all backup

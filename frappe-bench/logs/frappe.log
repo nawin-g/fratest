@@ -1,0 +1,378 @@
+2024-01-04 14:41:58,276 ERROR frappe New Exception collected with id: 2024-01-04 14:41:58.257910-127.0.0.1-a47
+Site: site3.local
+Form Dict: {'doctype': 'Payment Invoice', 'doc': 'PRO-2024-024', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-04 14:42:24,707 ERROR frappe New Exception collected with id: 2024-01-04 14:42:24.696437-127.0.0.1-963
+Site: site3.local
+Form Dict: {'doctype': 'Payment Invoice', 'doc': 'PRO-2024-024', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-04 14:44:22,562 ERROR frappe New Exception collected with id: 2024-01-04 14:44:22.430679-127.0.0.1-6dd
+Site: site3.local
+Form Dict: {'doctype': 'Payment Invoice', 'doc': 'PRO-2024-024', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-04 14:45:45,048 ERROR frappe New Exception collected with id: 2024-01-04 14:45:44.905824-127.0.0.1-416
+Site: site3.local
+Form Dict: {'doctype': 'Payment Invoice', 'doc': '{"name":"PRO-2024-024","owner":"Administrator","creation":"2024-01-04 14:26:22.773790","modified":"2024-01-04 14:26:32.540695","modified_by":"Administrator","docstatus":1,"idx":0,"customer":"Naveen","customer_name":"naveen","due_date":"2024-01-05","order_date":"2024-01-04","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-04T09:51:34.404Z"}', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-04 14:54:58,211 ERROR frappe New Exception collected with id: 2024-01-04 14:54:58.118741-127.0.0.1-317
+Site: site3.local
+Form Dict: {'doctype': 'Payment Invoice', 'doc': '{"name":"PRO-2024-024","owner":"Administrator","creation":"2024-01-04 14:26:22.773790","modified":"2024-01-04 14:26:32.540695","modified_by":"Administrator","docstatus":1,"idx":0,"customer":"Naveen","customer_name":"naveen","due_date":"2024-01-05","order_date":"2024-01-04","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-04T09:51:34.404Z"}', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-04 14:58:47,831 ERROR frappe New Exception collected with id: 2024-01-04 14:58:47.511065-127.0.0.1-036
+Site: site3.local
+Form Dict: {'doctype': 'Payment Invoice', 'doc': '{"name":"PRO-2024-024","owner":"Administrator","creation":"2024-01-04 14:26:22.773790","modified":"2024-01-04 14:26:32.540695","modified_by":"Administrator","docstatus":1,"idx":0,"customer":"Naveen","customer_name":"naveen","due_date":"2024-01-05","order_date":"2024-01-04","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-04T10:02:28.958Z"}', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-04 15:16:27,310 ERROR frappe New Exception collected with id: 2024-01-04 15:16:26.822707-127.0.0.1-f71
+Site: site3.local
+Form Dict: {'doctype': 'Payment Invoice', 'doc': 'PRO-2024-024', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-04 15:17:06,859 ERROR frappe New Exception collected with id: 2024-01-04 15:17:06.842061-127.0.0.1-d0c
+Site: site3.local
+Form Dict: {'doctype': 'Payment Invoice', 'doc': 'PRO-2024-024', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-04 15:18:32,781 ERROR frappe New Exception collected with id: 2024-01-04 15:18:32.751993-127.0.0.1-5d6
+Site: site3.local
+Form Dict: {'doctype': 'Payment Invoice', 'doc': 'PRO-2024-024', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-04 15:19:36,799 ERROR frappe New Exception collected with id: 2024-01-04 15:19:36.776357-127.0.0.1-1dc
+Site: site3.local
+Form Dict: {'doctype': 'Payment Invoice', 'doc': 'PRO-2024-024', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-04 15:20:39,731 ERROR frappe New Exception collected with id: 2024-01-04 15:20:39.716760-127.0.0.1-31e
+Site: site3.local
+Form Dict: {'doctype': 'Payment Invoice', 'doc': 'PRO-2024-024', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-04 15:22:25,248 ERROR frappe New Exception collected with id: 2024-01-04 15:22:25.212480-127.0.0.1-fab
+Site: site3.local
+Form Dict: {'doctype': 'Payment Invoice', 'doc': 'PRO-2024-024', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-04 19:43:44,207 ERROR frappe New Exception collected with id: 2024-01-04 19:43:44.051751-127.0.0.1-d7c
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-063', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-04 19:44:42,726 ERROR frappe New Exception collected with id: 2024-01-04 19:44:42.139184-127.0.0.1-cfb
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-063', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-04 19:57:41,068 ERROR frappe New Exception collected with id: 2024-01-04 19:57:40.874061-127.0.0.1-60b
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-064', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-04 20:01:32,986 ERROR frappe New Exception collected with id: 2024-01-04 20:01:32.806973-127.0.0.1-873
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-064', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 10:42:32,691 ERROR frappe New Exception collected with id: 2024-01-05 10:42:32.409261-127.0.0.1-bb2
+Site: site3.local
+Form Dict: {'doc': '{"name":"Invoice-2024-062","owner":"Administrator","creation":"2024-01-04 19:36:37.322837","modified":"2024-01-04 19:36:48.687594","modified_by":"Administrator","docstatus":0,"idx":0,"customer_name":"Naveen","payment_order":"PRO-2024-061","total_payment_cost":"0","amount_paid":0,"doctype":"Payment Invoice","payment_table":[],"invoice_date":"2024-01-05","invoice_due_date":"2024-01-13","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-05 12:25:40,081 ERROR frappe New Exception collected with id: 2024-01-05 12:25:39.559046-127.0.0.1-f77
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-067', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 12:30:53,281 ERROR frappe New Exception collected with id: 2024-01-05 12:30:53.253066-127.0.0.1-5ff
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-067', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 12:43:27,070 ERROR frappe New Exception collected with id: 2024-01-05 12:43:27.027975-127.0.0.1-47a
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 12:44:31,494 ERROR frappe New Exception collected with id: 2024-01-05 12:44:31.465611-127.0.0.1-e9b
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 13:12:04,729 ERROR frappe New Exception collected with id: 2024-01-05 13:12:04.476954-127.0.0.1-8fc
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 13:24:54,642 ERROR frappe New Exception collected with id: 2024-01-05 13:24:54.098700-127.0.0.1-60a
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 13:30:14,374 ERROR frappe New Exception collected with id: 2024-01-05 13:30:14.019667-127.0.0.1-449
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 13:37:03,643 ERROR frappe New Exception collected with id: 2024-01-05 13:37:03.272174-127.0.0.1-c92
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 13:40:11,868 ERROR frappe New Exception collected with id: 2024-01-05 13:40:11.111109-127.0.0.1-792
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 13:45:37,937 ERROR frappe New Exception collected with id: 2024-01-05 13:45:37.213045-127.0.0.1-d9e
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 14:03:13,154 ERROR frappe New Exception collected with id: 2024-01-05 14:03:12.802014-127.0.0.1-25d
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 14:04:58,774 ERROR frappe New Exception collected with id: 2024-01-05 14:04:58.571398-127.0.0.1-d68
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 14:07:41,148 ERROR frappe New Exception collected with id: 2024-01-05 14:07:40.969010-127.0.0.1-df8
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 14:14:43,201 ERROR frappe New Exception collected with id: 2024-01-05 14:14:42.943047-127.0.0.1-f9d
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 14:16:39,890 ERROR frappe New Exception collected with id: 2024-01-05 14:16:39.643414-127.0.0.1-e13
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 14:18:09,070 ERROR frappe New Exception collected with id: 2024-01-05 14:18:08.761212-127.0.0.1-c04
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 14:25:12,480 ERROR frappe New Exception collected with id: 2024-01-05 14:25:11.989491-127.0.0.1-882
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 14:29:58,292 ERROR frappe New Exception collected with id: 2024-01-05 14:29:58.059419-127.0.0.1-e87
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 14:30:34,733 ERROR frappe New Exception collected with id: 2024-01-05 14:30:34.412828-127.0.0.1-4c4
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 14:32:12,505 ERROR frappe New Exception collected with id: 2024-01-05 14:32:12.111150-127.0.0.1-ce5
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 14:34:35,175 ERROR frappe New Exception collected with id: 2024-01-05 14:34:35.020872-127.0.0.1-958
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 14:41:08,305 ERROR frappe New Exception collected with id: 2024-01-05 14:41:07.978061-127.0.0.1-fc6
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 14:44:55,831 ERROR frappe New Exception collected with id: 2024-01-05 14:44:55.798993-127.0.0.1-028
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 14:46:30,824 ERROR frappe New Exception collected with id: 2024-01-05 14:46:30.780426-127.0.0.1-3b4
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-072', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-05 16:28:27,935 ERROR frappe New Exception collected with id: 2024-01-05 16:28:26.738142-127.0.0.1-c04
+Site: site3.local
+Form Dict: {'doctype': 'Vendor', 'with_parent': '1', 'cached_timestamp': '2023-12-27 15:14:09.500056', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2024-01-05 16:29:36,175 ERROR frappe New Exception collected with id: 2024-01-05 16:29:36.013709-127.0.0.1-6d0
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Vendor","name":"new-vendor-ujagrltptf","__islocal":1,"__unsaved":1,"owner":"Administrator","vendor_status":"In Progress","is_active":0,"gst_no":"ewrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrw","vendor_name":"dhsdshfkj"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-05 16:32:24,854 ERROR frappe New Exception collected with id: 2024-01-05 16:32:24.722061-127.0.0.1-e10
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Vendor","name":"new-vendor-lbtefiugdm","__islocal":1,"__unsaved":1,"owner":"Administrator","vendor_status":"In Progress","is_active":0,"gst_no":"3242323234324324r3ewrferfee","vendor_name":"sagfdsfvsdc"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-05 17:13:16,801 ERROR frappe New Exception collected with id: 2024-01-05 17:13:16.288894-127.0.0.1-835
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-079","owner":"Administrator","creation":"2024-01-05 16:08:47.689545","modified":"2024-01-05 16:08:47.689545","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-05","due_date":"2024-01-07","total_payment_cost":75816,"total_cost_in_words":"INR Seventy Five Thousand, Eight Hundred And Sixteen only.","doctype":"Payment Order Test","payment_table":[{"name":"fvgdf","owner":"Administrator","creation":"2024-01-05 16:08:47.689545","modified":"2024-01-05 16:08:47.689545","modified_by":"Administrator","docstatus":0,"idx":1,"item":"fvgdf","quantity":324,"rate_per_quantity":234,"total_rate":75816,"discount_percentage":0,"discount_amount":0,"discounted_rate":75816,"rate_in_words":"INR Seventy Five Thousand, Eight Hundred And Sixteen only.","parent":"PRO-2024-079","parentfield":"payment_table","parenttype":"Payment Order Test","doctype":"Payment Table"}],"__last_sync_on":"2024-01-05T11:53:29.684Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-05 17:15:02,569 ERROR frappe New Exception collected with id: 2024-01-05 17:15:02.533613-127.0.0.1-36f
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-079","owner":"Administrator","creation":"2024-01-05 16:08:47.689545","modified":"2024-01-05 16:08:47.689545","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-05","due_date":"2024-01-07","total_payment_cost":75816,"total_cost_in_words":"INR Seventy Five Thousand, Eight Hundred And Sixteen only.","doctype":"Payment Order Test","payment_table":[{"name":"fvgdf","owner":"Administrator","creation":"2024-01-05 16:08:47.689545","modified":"2024-01-05 16:08:47.689545","modified_by":"Administrator","docstatus":0,"idx":1,"item":"fvgdf","quantity":324,"rate_per_quantity":234,"total_rate":75816,"discount_percentage":0,"discount_amount":0,"discounted_rate":75816,"rate_in_words":"INR Seventy Five Thousand, Eight Hundred And Sixteen only.","parent":"PRO-2024-079","parentfield":"payment_table","parenttype":"Payment Order Test","doctype":"Payment Table"}],"__last_sync_on":"2024-01-05T11:53:49.521Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-05 17:16:53,827 ERROR frappe New Exception collected with id: 2024-01-05 17:16:53.691797-127.0.0.1-124
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-079","owner":"Administrator","creation":"2024-01-05 16:08:47.689545","modified":"2024-01-05 16:08:47.689545","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-05","due_date":"2024-01-07","total_payment_cost":75816,"total_cost_in_words":"INR Seventy Five Thousand, Eight Hundred And Sixteen only.","doctype":"Payment Order Test","payment_table":[{"name":"fvgdf","owner":"Administrator","creation":"2024-01-05 16:08:47.689545","modified":"2024-01-05 16:08:47.689545","modified_by":"Administrator","docstatus":0,"idx":1,"item":"fvgdf","quantity":324,"rate_per_quantity":234,"total_rate":75816,"discount_percentage":0,"discount_amount":0,"discounted_rate":75816,"rate_in_words":"INR Seventy Five Thousand, Eight Hundred And Sixteen only.","parent":"PRO-2024-079","parentfield":"payment_table","parenttype":"Payment Order Test","doctype":"Payment Table"}],"__last_sync_on":"2024-01-05T11:56:02.405Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 11:21:54,823 ERROR frappe New Exception collected with id: 2024-01-08 11:21:54.636558-127.0.0.1-f4c
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-sotnjzzyaz","__islocal":1,"__unsaved":1,"owner":"Administrator","workflow_state":"Draft","order_date":"2024-01-08","customer_name":"Naveen","customer":"Naveen","due_date":"2024-01-09"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-08 11:24:55,240 ERROR frappe New Exception collected with id: 2024-01-08 11:24:55.225858-127.0.0.1-7f2
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-080","owner":"Administrator","creation":"2024-01-08 11:24:35.383091","modified":"2024-01-08 11:24:35.383091","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":721.28,"total_cost_in_words":"INR Seven Hundred And Twenty One and Twenty Eight Paisa only.","amended_from":null,"doctype":"Payment Order Test","payment_table":[{"name":"sdf","owner":"Administrator","creation":"2024-01-08 11:24:35.383091","modified":"2024-01-08 11:24:35.383091","modified_by":"Administrator","docstatus":0,"idx":1,"item":"sdf","quantity":32,"rate_per_quantity":23,"total_rate":736,"due_date":null,"discount_percentage":2,"discount_amount":14.72,"discounted_rate":721.28,"rate_in_words":"INR Seven Hundred And Twenty One and Twenty Eight Paisa only.","parent":"PRO-2024-080","parentfield":"payment_table","parenttype":"Payment Order Test","doctype":"Payment Table","__unsaved":1}],"__last_sync_on":"2024-01-08T05:54:36.135Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 12:02:14,017 ERROR frappe New Exception collected with id: 2024-01-08 12:02:13.875540-127.0.0.1-a9a
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-080","owner":"Administrator","creation":"2024-01-08 11:24:35.383091","modified":"2024-01-08 11:24:35.383091","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":721.28,"total_cost_in_words":"INR Seven Hundred And Twenty One and Twenty Eight Paisa only.","doctype":"Payment Order Test","payment_table":[{"name":"sdf","owner":"Administrator","creation":"2024-01-08 11:24:35.383091","modified":"2024-01-08 11:24:35.383091","modified_by":"Administrator","docstatus":0,"idx":1,"item":"sdf","quantity":32,"rate_per_quantity":23,"total_rate":736,"discount_percentage":2,"discount_amount":14.72,"discounted_rate":721.28,"rate_in_words":"INR Seven Hundred And Twenty One and Twenty Eight Paisa only.","parent":"PRO-2024-080","parentfield":"payment_table","parenttype":"Payment Order Test","doctype":"Payment Table"}],"__last_sync_on":"2024-01-08T06:33:37.544Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 12:04:15,745 ERROR frappe New Exception collected with id: 2024-01-08 12:04:15.587102-127.0.0.1-787
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-080","owner":"Administrator","creation":"2024-01-08 11:24:35.383091","modified":"2024-01-08 11:24:35.383091","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":721.28,"total_cost_in_words":"INR Seven Hundred And Twenty One and Twenty Eight Paisa only.","doctype":"Payment Order Test","payment_table":[{"name":"sdf","owner":"Administrator","creation":"2024-01-08 11:24:35.383091","modified":"2024-01-08 11:24:35.383091","modified_by":"Administrator","docstatus":0,"idx":1,"item":"sdf","quantity":32,"rate_per_quantity":23,"total_rate":736,"discount_percentage":2,"discount_amount":14.72,"discounted_rate":721.28,"rate_in_words":"INR Seven Hundred And Twenty One and Twenty Eight Paisa only.","parent":"PRO-2024-080","parentfield":"payment_table","parenttype":"Payment Order Test","doctype":"Payment Table"}],"__last_sync_on":"2024-01-08T06:35:28.711Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 12:05:07,239 ERROR frappe New Exception collected with id: 2024-01-08 12:05:07.085627-127.0.0.1-391
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-080","owner":"Administrator","creation":"2024-01-08 11:24:35.383091","modified":"2024-01-08 11:24:35.383091","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":721.28,"total_cost_in_words":"INR Seven Hundred And Twenty One and Twenty Eight Paisa only.","doctype":"Payment Order Test","payment_table":[{"name":"sdf","owner":"Administrator","creation":"2024-01-08 11:24:35.383091","modified":"2024-01-08 11:24:35.383091","modified_by":"Administrator","docstatus":0,"idx":1,"item":"sdf","quantity":32,"rate_per_quantity":23,"total_rate":736,"discount_percentage":2,"discount_amount":14.72,"discounted_rate":721.28,"rate_in_words":"INR Seven Hundred And Twenty One and Twenty Eight Paisa only.","parent":"PRO-2024-080","parentfield":"payment_table","parenttype":"Payment Order Test","doctype":"Payment Table"}],"__last_sync_on":"2024-01-08T06:36:17.047Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 12:18:52,694 ERROR frappe New Exception collected with id: 2024-01-08 12:18:52.544805-127.0.0.1-73b
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-080","owner":"Administrator","creation":"2024-01-08 11:24:35.383091","modified":"2024-01-08 11:24:35.383091","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":721.28,"total_cost_in_words":"INR Seven Hundred And Twenty One and Twenty Eight Paisa only.","doctype":"Payment Order Test","payment_table":[{"name":"sdf","owner":"Administrator","creation":"2024-01-08 11:24:35.383091","modified":"2024-01-08 11:24:35.383091","modified_by":"Administrator","docstatus":0,"idx":1,"item":"sdf","quantity":32,"rate_per_quantity":23,"total_rate":736,"discount_percentage":2,"discount_amount":14.72,"discounted_rate":721.28,"rate_in_words":"INR Seven Hundred And Twenty One and Twenty Eight Paisa only.","parent":"PRO-2024-080","parentfield":"payment_table","parenttype":"Payment Order Test","doctype":"Payment Table"}],"__last_sync_on":"2024-01-08T06:38:23.643Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 12:19:46,531 ERROR frappe New Exception collected with id: 2024-01-08 12:19:46.365837-127.0.0.1-ab1
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-080","owner":"Administrator","creation":"2024-01-08 11:24:35.383091","modified":"2024-01-08 11:24:35.383091","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":721.28,"total_cost_in_words":"INR Seven Hundred And Twenty One and Twenty Eight Paisa only.","doctype":"Payment Order Test","payment_table":[{"name":"sdf","owner":"Administrator","creation":"2024-01-08 11:24:35.383091","modified":"2024-01-08 11:24:35.383091","modified_by":"Administrator","docstatus":0,"idx":1,"item":"sdf","quantity":32,"rate_per_quantity":23,"total_rate":736,"discount_percentage":2,"discount_amount":14.72,"discounted_rate":721.28,"rate_in_words":"INR Seven Hundred And Twenty One and Twenty Eight Paisa only.","parent":"PRO-2024-080","parentfield":"payment_table","parenttype":"Payment Order Test","doctype":"Payment Table"}],"__last_sync_on":"2024-01-08T06:49:37.578Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 12:28:02,696 ERROR frappe New Exception collected with id: 2024-01-08 12:28:02.557094-127.0.0.1-6a3
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-ilvekmesbo","__islocal":1,"__unsaved":1,"owner":"Administrator","workflow_state":"Draft","order_date":"2024-01-08","customer_name":"Naveen","customer":"Naveen","due_date":"2024-01-10"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-08 12:50:10,457 ERROR frappe New Exception collected with id: 2024-01-08 12:50:10.319853-127.0.0.1-067
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-ilvekmesbo","__islocal":1,"__unsaved":1,"owner":"Administrator","workflow_state":"Draft","order_date":"2024-01-08","customer_name":"Naveen","customer":"Naveen","due_date":"2024-01-10","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-gltttgtyxf","__islocal":1,"__unsaved":1,"owner":"Administrator","quantity":0,"rate_per_quantity":0,"discount_percentage":1,"parent":"new-payment-order-test-ilvekmesbo","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"item":"asasw"}]}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-08 12:53:13,972 ERROR frappe New Exception collected with id: 2024-01-08 12:53:13.836982-127.0.0.1-a5f
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-gnwajezceo","__islocal":1,"__unsaved":1,"owner":"Administrator","workflow_state":"Draft","order_date":"2024-01-08","customer_name":"Naveen","customer":"Naveen","due_date":"2024-01-10"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-08 12:53:41,527 ERROR frappe New Exception collected with id: 2024-01-08 12:53:41.291866-127.0.0.1-5af
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'with_parent': '1', 'cached_timestamp': '2024-01-05 15:53:05.841801', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2024-01-08 13:04:10,242 ERROR frappe New Exception collected with id: 2024-01-08 13:04:10.118886-127.0.0.1-bff
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-iwigqbkqjr","__islocal":1,"__unsaved":1,"owner":"Administrator","workflow_state":"Draft","order_date":"2024-01-08","due_date":"2024-01-09","customer_name":"Naveen","customer":"Naveen"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-08 13:10:37,236 ERROR frappe New Exception collected with id: 2024-01-08 13:10:37.125441-127.0.0.1-2a4
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-iwigqbkqjr","__islocal":1,"__unsaved":1,"owner":"Administrator","workflow_state":"Draft","order_date":"2024-01-08","due_date":"2024-01-09","customer_name":"Naveen","customer":"Naveen"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-08 13:11:13,374 ERROR frappe New Exception collected with id: 2024-01-08 13:11:13.356583-127.0.0.1-7a7
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-iwigqbkqjr","__islocal":1,"__unsaved":1,"owner":"Administrator","workflow_state":"Draft","order_date":"2024-01-08","due_date":"2024-01-09","customer_name":"Naveen","customer":"Naveen"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-08 13:12:57,160 ERROR frappe New Exception collected with id: 2024-01-08 13:12:57.139904-127.0.0.1-d01
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-iwigqbkqjr","__islocal":1,"__unsaved":1,"owner":"Administrator","workflow_state":"Draft","order_date":"2024-01-08","due_date":"2024-01-09","customer_name":"Naveen","customer":"Naveen"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-08 13:13:24,884 ERROR frappe New Exception collected with id: 2024-01-08 13:13:24.867721-127.0.0.1-c86
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-zwyteriidh","__islocal":1,"__unsaved":1,"owner":"Administrator","workflow_state":"Draft","order_date":"2024-01-08","customer_name":"Naveen","customer":"Naveen","due_date":"2024-01-09"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-08 13:17:39,583 ERROR frappe New Exception collected with id: 2024-01-08 13:17:39.437107-127.0.0.1-073
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-081","owner":"Administrator","creation":"2024-01-08 13:17:26.399478","modified":"2024-01-08 13:17:26.399478","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":0,"total_cost_in_words":null,"amended_from":null,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T07:47:26.659Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 13:20:07,039 ERROR frappe New Exception collected with id: 2024-01-08 13:20:07.024124-127.0.0.1-13b
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-081","owner":"Administrator","creation":"2024-01-08 13:17:26.399478","modified":"2024-01-08 13:17:26.399478","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T07:50:03.110Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 13:27:06,871 ERROR frappe New Exception collected with id: 2024-01-08 13:27:06.739268-127.0.0.1-770
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-081","owner":"Administrator","creation":"2024-01-08 13:17:26.399478","modified":"2024-01-08 13:17:26.399478","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T07:57:03.758Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 13:28:05,859 ERROR frappe New Exception collected with id: 2024-01-08 13:28:05.735496-127.0.0.1-cf9
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-081","owner":"Administrator","creation":"2024-01-08 13:17:26.399478","modified":"2024-01-08 13:17:26.399478","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T07:58:03.323Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 13:57:14,703 ERROR frappe New Exception collected with id: 2024-01-08 13:57:14.571450-127.0.0.1-379
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-081","owner":"Administrator","creation":"2024-01-08 13:17:26.399478","modified":"2024-01-08 13:17:26.399478","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T09:06:38.439Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 13:57:46,208 ERROR frappe New Exception collected with id: 2024-01-08 13:57:46.076209-127.0.0.1-324
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-081","owner":"Administrator","creation":"2024-01-08 13:17:26.399478","modified":"2024-01-08 13:17:26.399478","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T09:07:07.737Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 13:58:19,486 ERROR frappe New Exception collected with id: 2024-01-08 13:58:19.348894-127.0.0.1-33f
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-081","owner":"Administrator","creation":"2024-01-08 13:17:26.399478","modified":"2024-01-08 13:17:26.399478","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T09:07:38.198Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 14:00:01,234 ERROR frappe New Exception collected with id: 2024-01-08 14:00:01.034966-127.0.0.1-ec4
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'with_parent': '1', 'cached_timestamp': '2024-01-05 15:53:05.841801', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2024-01-08 14:02:09,923 ERROR frappe New Exception collected with id: 2024-01-08 14:02:09.750253-127.0.0.1-9f8
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'with_parent': '1', 'cached_timestamp': '2024-01-05 15:53:05.841801', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2024-01-08 14:02:50,561 ERROR frappe New Exception collected with id: 2024-01-08 14:02:50.434757-127.0.0.1-25c
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'with_parent': '1', 'cached_timestamp': '2024-01-05 15:53:05.841801', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2024-01-08 14:03:16,948 ERROR frappe New Exception collected with id: 2024-01-08 14:03:16.812657-127.0.0.1-002
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-081","owner":"Administrator","creation":"2024-01-08 13:17:26.399478","modified":"2024-01-08 13:17:26.399478","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T09:12:07.126Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 14:08:30,222 ERROR frappe New Exception collected with id: 2024-01-08 14:08:30.062445-127.0.0.1-198
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-081","owner":"Administrator","creation":"2024-01-08 13:17:26.399478","modified":"2024-01-08 13:17:26.399478","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T09:17:01.447Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 14:09:01,633 ERROR frappe New Exception collected with id: 2024-01-08 14:09:01.495062-127.0.0.1-b33
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-081","owner":"Administrator","creation":"2024-01-08 13:17:26.399478","modified":"2024-01-08 13:17:26.399478","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T09:17:31.612Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 14:13:29,139 ERROR frappe New Exception collected with id: 2024-01-08 14:13:28.999532-127.0.0.1-6e3
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-081","owner":"Administrator","creation":"2024-01-08 13:17:26.399478","modified":"2024-01-08 13:17:26.399478","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T09:21:37.268Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 14:14:27,902 ERROR frappe New Exception collected with id: 2024-01-08 14:14:27.751449-127.0.0.1-01e
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-081","owner":"Administrator","creation":"2024-01-08 13:17:26.399478","modified":"2024-01-08 13:17:26.399478","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T09:22:31.844Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 14:36:27,181 ERROR frappe New Exception collected with id: 2024-01-08 14:36:26.957073-127.0.0.1-7c0
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-081","owner":"Administrator","creation":"2024-01-08 13:17:26.399478","modified":"2024-01-08 13:17:26.399478","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-09","due_date":"2024-01-11","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T09:45:39.669Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-08 14:49:33,110 ERROR frappe New Exception collected with id: 2024-01-08 14:49:32.974990-127.0.0.1-064
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-082","owner":"Administrator","creation":"2024-01-08 14:49:11.611346","modified":"2024-01-08 14:49:11.611346","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-10","total_payment_cost":0,"total_cost_in_words":null,"amended_from":null,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T09:57:59.612Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 15:01:11,007 ERROR frappe New Exception collected with id: 2024-01-08 15:01:10.987084-127.0.0.1-c27
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-086","owner":"Administrator","creation":"2024-01-08 15:01:05.733059","modified":"2024-01-08 15:01:05.733059","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-10","total_payment_cost":0,"total_cost_in_words":null,"amended_from":null,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T10:08:58.690Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 15:02:46,228 ERROR frappe New Exception collected with id: 2024-01-08 15:02:46.211715-127.0.0.1-331
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-086","owner":"Administrator","creation":"2024-01-08 15:01:05.733059","modified":"2024-01-08 15:01:05.733059","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-10","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T10:09:10.359Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 15:03:30,679 ERROR frappe New Exception collected with id: 2024-01-08 15:03:30.543152-127.0.0.1-21b
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-086","owner":"Administrator","creation":"2024-01-08 15:01:05.733059","modified":"2024-01-08 15:01:05.733059","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-10","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T10:11:10.252Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 15:04:50,791 ERROR frappe New Exception collected with id: 2024-01-08 15:04:50.775784-127.0.0.1-36e
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-088","owner":"Administrator","creation":"2024-01-08 15:04:46.833029","modified":"2024-01-08 15:04:46.833029","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":0,"total_cost_in_words":null,"amended_from":null,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T10:12:22.760Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 15:06:45,803 ERROR frappe New Exception collected with id: 2024-01-08 15:06:45.668504-127.0.0.1-00e
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-088","owner":"Administrator","creation":"2024-01-08 15:04:46.833029","modified":"2024-01-08 15:04:46.833029","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T10:13:02.544Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 15:09:27,858 ERROR frappe New Exception collected with id: 2024-01-08 15:09:27.721220-127.0.0.1-2bd
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-088","owner":"Administrator","creation":"2024-01-08 15:04:46.833029","modified":"2024-01-08 15:04:46.833029","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T10:16:24.742Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 15:10:33,128 ERROR frappe New Exception collected with id: 2024-01-08 15:10:33.112832-127.0.0.1-f94
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-088","owner":"Administrator","creation":"2024-01-08 15:04:46.833029","modified":"2024-01-08 15:04:46.833029","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T10:17:11.476Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 15:13:49,855 ERROR frappe New Exception collected with id: 2024-01-08 15:13:49.333935-127.0.0.1-c0c
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-088","owner":"Administrator","creation":"2024-01-08 15:04:46.833029","modified":"2024-01-08 15:04:46.833029","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T10:18:23.979Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 15:16:12,220 ERROR frappe New Exception collected with id: 2024-01-08 15:16:12.083347-127.0.0.1-9ae
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-088","owner":"Administrator","creation":"2024-01-08 15:04:46.833029","modified":"2024-01-08 15:04:46.833029","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T10:22:44.640Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 15:17:22,259 ERROR frappe New Exception collected with id: 2024-01-08 15:17:22.110017-127.0.0.1-820
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-088","owner":"Administrator","creation":"2024-01-08 15:04:46.833029","modified":"2024-01-08 15:04:46.833029","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T10:23:50.132Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 15:18:25,971 ERROR frappe New Exception collected with id: 2024-01-08 15:18:25.837530-127.0.0.1-33a
+Site: site3.local
+Form Dict: {'doc': '{"name":"PRO-2024-088","owner":"Administrator","creation":"2024-01-08 15:04:46.833029","modified":"2024-01-08 15:04:46.833029","modified_by":"Administrator","docstatus":0,"idx":0,"workflow_state":"Draft","customer":"Naveen","customer_name":"Naveen","order_date":"2024-01-08","due_date":"2024-01-09","total_payment_cost":0,"doctype":"Payment Order Test","payment_table":[],"__last_sync_on":"2024-01-08T10:24:46.567Z"}', 'action': 'Request Approval', 'cmd': 'frappe.model.workflow.apply_workflow'}
+2024-01-08 20:02:41,869 ERROR frappe New Exception collected with id: 2024-01-08 20:02:41.735543-127.0.0.1-295
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-yxwfkzpphq","__islocal":1,"__unsaved":1,"owner":"Administrator","workflow_state":"Draft","order_date":"2024-01-08","customer_name":"Naveen","customer":"Naveen","due_date":"2024-01-09","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-gsfzepfyks","__islocal":1,"__unsaved":1,"owner":"Administrator","quantity":0,"rate_per_quantity":0,"discount_percentage":"0","parent":"new-payment-order-test-yxwfkzpphq","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"item":"jhwvdjchgsdkhc"}]}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-08 20:08:11,495 ERROR frappe New Exception collected with id: 2024-01-08 20:08:11.362143-127.0.0.1-695
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-yxwfkzpphq","__islocal":1,"__unsaved":1,"owner":"Administrator","workflow_state":"Draft","order_date":"2024-01-08","customer_name":"Naveen","customer":"Naveen","due_date":"2024-01-09","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-gsfzepfyks","__islocal":1,"__unsaved":1,"owner":"Administrator","quantity":0,"rate_per_quantity":0,"discount_percentage":"0","parent":"new-payment-order-test-yxwfkzpphq","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"item":"jhwvdjchgsdkhc"}]}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-08 20:08:58,370 ERROR frappe New Exception collected with id: 2024-01-08 20:08:58.353576-127.0.0.1-94d
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-yljlyehrqc","__islocal":1,"__unsaved":1,"owner":"Administrator","workflow_state":"Draft","order_date":"2024-01-08","customer_name":"Naveen","customer":"Naveen","due_date":"2024-01-10","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-vcbzutrzef","__islocal":1,"__unsaved":1,"owner":"Administrator","quantity":3,"rate_per_quantity":3244,"discount_percentage":2,"parent":"new-payment-order-test-yljlyehrqc","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"item":"jhwvdjchgsdkhc","total_rate":9732,"discount_amount":194.64,"discounted_rate":9537.36}],"total_payment_cost":9537.36}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-08 20:11:16,161 ERROR frappe New Exception collected with id: 2024-01-08 20:11:16.034660-127.0.0.1-3f9
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-dzkshxrvqk","__islocal":1,"__unsaved":1,"owner":"Administrator","workflow_state":"Draft","order_date":"2024-01-08","customer_name":"Naveen","customer":"Naveen","due_date":"2024-01-10","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-gweklloqye","__islocal":1,"__unsaved":1,"owner":"Administrator","quantity":320,"rate_per_quantity":322,"discount_percentage":2,"parent":"new-payment-order-test-dzkshxrvqk","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"item":"jhwvdjchgsdkhc","total_rate":103040,"discount_amount":2060.8,"discounted_rate":100979.2}],"total_payment_cost":100979.2}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-08 20:11:40,020 ERROR frappe New Exception collected with id: 2024-01-08 20:11:40.003747-127.0.0.1-d15
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-dzkshxrvqk","__islocal":1,"__unsaved":1,"owner":"Administrator","workflow_state":"Draft","order_date":"2024-01-08","customer_name":"Naveen","customer":"Naveen","due_date":"2024-01-10","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-gweklloqye","__islocal":1,"__unsaved":1,"owner":"Administrator","quantity":320,"rate_per_quantity":322,"discount_percentage":2,"parent":"new-payment-order-test-dzkshxrvqk","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"item":"jhwvdjchgsdkhc","total_rate":103040,"discount_amount":2060.8,"discounted_rate":100979.2}],"total_payment_cost":100979.2}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-08 20:12:02,683 ERROR frappe New Exception collected with id: 2024-01-08 20:12:02.662626-127.0.0.1-398
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-dzkshxrvqk","__islocal":1,"__unsaved":1,"owner":"Administrator","workflow_state":"Draft","order_date":"2024-01-08","customer_name":"Naveen","customer":"Naveen","due_date":"2024-01-10","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-gweklloqye","__islocal":1,"__unsaved":1,"owner":"Administrator","quantity":320,"rate_per_quantity":322,"discount_percentage":2,"parent":"new-payment-order-test-dzkshxrvqk","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"item":"jhwvdjchgsdkhc","total_rate":103040,"discount_amount":2060.8,"discounted_rate":100979.2}],"total_payment_cost":100979.2}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-09 10:53:37,717 ERROR frappe New Exception collected with id: 2024-01-09 10:53:37.563792-127.0.0.1-111
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-ggjhwtxgpw","__islocal":1,"__unsaved":1,"owner":"Administrator","workflow_state":"Draft","order_date":"2024-01-09","customer_name":"Naveen","customer":"Naveen","due_date":"2024-01-10","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-soepondisl","__islocal":1,"__unsaved":1,"owner":"Administrator","quantity":43,"rate_per_quantity":3444,"discount_percentage":4,"parent":"new-payment-order-test-ggjhwtxgpw","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"item":"jhwvdjchgsdkhc","total_rate":148092,"discount_amount":5923.68,"discounted_rate":142168.32}],"total_payment_cost":142168.32}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-09 11:01:13,255 ERROR frappe New Exception collected with id: 2024-01-09 11:01:13.018398-127.0.0.1-9ad
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Payment Order Test","name":"new-payment-order-test-sojboukscb","__islocal":1,"__unsaved":1,"owner":"Administrator","workflow_state":"Draft","order_date":"2024-01-09","payment_table":[{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-qdakfaizxb","__islocal":1,"__unsaved":1,"owner":"Administrator","quantity":0,"rate_per_quantity":0,"discount_percentage":"0","parent":"new-payment-order-test-sojboukscb","parentfield":"payment_table","parenttype":"Payment Order Test","idx":1,"__unedited":false,"item":"Bed"},{"docstatus":0,"doctype":"Payment Table","name":"new-payment-table-rglwnchtkm","__islocal":1,"__unsaved":1,"owner":"Administrator","quantity":0,"rate_per_quantity":0,"discount_percentage":"0","parent":"new-payment-order-test-sojboukscb","parentfield":"payment_table","parenttype":"Payment Order Test","idx":2,"__unedited":false,"item":"jhwvdjchgsdkhc"}],"customer_name":"Naveen","customer":"Naveen","due_date":"2024-01-10"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-09 13:28:54,592 ERROR frappe New Exception collected with id: 2024-01-09 13:28:53.974411-127.0.0.1-24c
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-091', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-09 14:25:17,990 ERROR frappe New Exception collected with id: 2024-01-09 14:25:17.853303-127.0.0.1-297
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-091', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-09 14:30:45,477 ERROR frappe New Exception collected with id: 2024-01-09 14:30:45.348029-127.0.0.1-7ba
+Site: site3.local
+Form Dict: {'doctype': 'Payment Order Test', 'abc': 'PRO-2024-091', 'target_doc': '', 'cmd': 'naveeng.naveen_g.doctype.payment_order_test.payment_order_test.invoicecall'}
+2024-01-17 11:54:57,753 ERROR frappe New Exception collected with id: 2024-01-17 11:54:57.622992-127.0.0.1-a4e
+Site: site3.local
+Form Dict: {'cmd': 'login', 'usr': 'administrator', 'device': 'desktop'}
+2024-01-17 11:55:06,337 ERROR frappe New Exception collected with id: 2024-01-17 11:55:06.317201-127.0.0.1-309
+Site: site3.local
+Form Dict: {'cmd': 'login', 'usr': 'administrator', 'pwd': '********', 'device': 'desktop'}
+2024-01-17 11:55:20,500 ERROR frappe New Exception collected with id: 2024-01-17 11:55:20.478443-127.0.0.1-df3
+Site: site3.local
+Form Dict: {'cmd': 'login', 'usr': 'administrator', 'device': 'desktop'}
+2024-01-17 11:55:29,767 ERROR frappe New Exception collected with id: 2024-01-17 11:55:29.749267-127.0.0.1-9d4
+Site: site3.local
+Form Dict: {'cmd': 'login', 'usr': 'administrator', 'device': 'desktop'}
+2024-01-17 13:10:27,721 ERROR frappe New Exception collected with id: 2024-01-17 13:10:27.246836-127.0.0.1-745
+Site: site3.local
+Form Dict: {'doctype': 'Library Settings', 'filters': '[]', 'fields': '[]', 'distinct': 'false', 'cmd': 'frappe.desk.reportview.get_count'}
+2024-01-17 13:12:06,122 ERROR frappe New Exception collected with id: 2024-01-17 13:12:06.109048-127.0.0.1-dcf
+Site: site3.local
+Form Dict: {'doctype': 'Library Settings', 'filters': '[]', 'fields': '[]', 'distinct': 'false', 'cmd': 'frappe.desk.reportview.get_count'}
+2024-01-17 17:13:57,636 ERROR frappe New Exception collected with id: 2024-01-17 17:13:57.492856-127.0.0.1-558
+Site: site3.local
+Form Dict: {'doc': '{"name":"LIB-TRXN105","owner":"Administrator","creation":"2024-01-17 17:05:06.611920","modified":"2024-01-17 17:08:07.458351","modified_by":"Administrator","docstatus":0,"idx":0,"article":"ARTICLE-100","article_name":"Spider-Man","member_id":"MEM-2024-102","member_name":"Naveen G","membership_type":"GOLD","transaction_type":"Issue","issue_date":"2024-01-01","return_date":"2024-01-06","due_date":"2024-01-04","amount_paid":0,"doctype":"Library Transaction","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-17 17:15:19,018 ERROR frappe New Exception collected with id: 2024-01-17 17:15:18.883255-127.0.0.1-991
+Site: site3.local
+Form Dict: {'doc': '{"name":"LIB-TRXN105","owner":"Administrator","creation":"2024-01-17 17:05:06.611920","modified":"2024-01-17 17:08:07.458351","modified_by":"Administrator","docstatus":0,"idx":0,"article":"ARTICLE-100","article_name":"Spider-Man","member_id":"MEM-2024-102","member_name":"Naveen G","membership_type":"GOLD","transaction_type":"Issue","issue_date":"2024-01-01","return_date":"2024-01-06","due_date":"2024-01-04","amount_paid":0,"doctype":"Library Transaction","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-17 17:15:43,172 ERROR frappe New Exception collected with id: 2024-01-17 17:15:43.151634-127.0.0.1-2fa
+Site: site3.local
+Form Dict: {'doc': '{"name":"LIB-TRXN105","owner":"Administrator","creation":"2024-01-17 17:05:06.611920","modified":"2024-01-17 17:08:07.458351","modified_by":"Administrator","docstatus":0,"idx":0,"article":"ARTICLE-100","article_name":"Spider-Man","member_id":"MEM-2024-102","member_name":"Naveen G","membership_type":"GOLD","transaction_type":"Issue","issue_date":"2024-01-01","return_date":"2024-01-06","due_date":"2024-01-04","amount_paid":0,"doctype":"Library Transaction","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-17 17:17:24,470 ERROR frappe New Exception collected with id: 2024-01-17 17:17:24.331762-127.0.0.1-d6f
+Site: site3.local
+Form Dict: {'doc': '{"name":"LIB-TRXN105","owner":"Administrator","creation":"2024-01-17 17:05:06.611920","modified":"2024-01-17 17:08:07.458351","modified_by":"Administrator","docstatus":0,"idx":0,"article":"ARTICLE-100","article_name":"Spider-Man","member_id":"MEM-2024-102","member_name":"Naveen G","membership_type":"GOLD","transaction_type":"Issue","issue_date":"2024-01-01","return_date":"2024-01-06","due_date":"2024-01-04","amount_paid":0,"doctype":"Library Transaction","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-17 17:18:41,651 ERROR frappe New Exception collected with id: 2024-01-17 17:18:41.501229-127.0.0.1-3e4
+Site: site3.local
+Form Dict: {'doc': '{"name":"LIB-TRXN105","owner":"Administrator","creation":"2024-01-17 17:05:06.611920","modified":"2024-01-17 17:08:07.458351","modified_by":"Administrator","docstatus":0,"idx":0,"article":"ARTICLE-100","article_name":"Spider-Man","member_id":"MEM-2024-102","member_name":"Naveen G","membership_type":"GOLD","transaction_type":"Issue","issue_date":"2024-01-01","return_date":"2024-01-06","due_date":"2024-01-04","amount_paid":0,"doctype":"Library Transaction","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-17 17:20:29,329 ERROR frappe New Exception collected with id: 2024-01-17 17:20:29.303948-127.0.0.1-1db
+Site: site3.local
+Form Dict: {'doc': '{"name":"LIB-TRXN105","owner":"Administrator","creation":"2024-01-17 17:05:06.611920","modified":"2024-01-17 17:08:07.458351","modified_by":"Administrator","docstatus":0,"idx":0,"article":"ARTICLE-100","article_name":"Spider-Man","member_id":"MEM-2024-102","member_name":"Naveen G","membership_type":"GOLD","transaction_type":"Issue","issue_date":"2024-01-01","return_date":"2024-01-06","due_date":"2024-01-04","amount_paid":0,"doctype":"Library Transaction","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-17 17:20:56,636 ERROR frappe New Exception collected with id: 2024-01-17 17:20:56.494393-127.0.0.1-e39
+Site: site3.local
+Form Dict: {'doc': '{"name":"LIB-TRXN105","owner":"Administrator","creation":"2024-01-17 17:05:06.611920","modified":"2024-01-17 17:08:07.458351","modified_by":"Administrator","docstatus":0,"idx":0,"article":"ARTICLE-100","article_name":"Spider-Man","member_id":"MEM-2024-102","member_name":"Naveen G","membership_type":"GOLD","transaction_type":"Issue","issue_date":"2024-01-01","return_date":"2024-01-06","due_date":"2024-01-04","amount_paid":0,"doctype":"Library Transaction","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-17 17:21:58,118 ERROR frappe New Exception collected with id: 2024-01-17 17:21:57.985595-127.0.0.1-1d9
+Site: site3.local
+Form Dict: {'doc': '{"name":"LIB-TRXN105","owner":"Administrator","creation":"2024-01-17 17:05:06.611920","modified":"2024-01-17 17:08:07.458351","modified_by":"Administrator","docstatus":0,"idx":0,"article":"ARTICLE-100","article_name":"Spider-Man","member_id":"MEM-2024-102","member_name":"Naveen G","membership_type":"GOLD","transaction_type":"Issue","issue_date":"2024-01-01","return_date":"2024-01-06","due_date":"2024-01-04","amount_paid":0,"doctype":"Library Transaction","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-17 17:25:05,372 ERROR frappe New Exception collected with id: 2024-01-17 17:25:05.236799-127.0.0.1-ced
+Site: site3.local
+Form Dict: {'doc': '{"name":"LIB-TRXN105","owner":"Administrator","creation":"2024-01-17 17:05:06.611920","modified":"2024-01-17 17:08:07.458351","modified_by":"Administrator","docstatus":0,"idx":0,"article":"ARTICLE-100","article_name":"Spider-Man","member_id":"MEM-2024-102","member_name":"Naveen G","membership_type":"GOLD","transaction_type":"Issue","issue_date":"2024-01-01","return_date":"2024-01-06","due_date":"2024-01-04","amount_paid":0,"doctype":"Library Transaction","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-17 17:26:22,566 ERROR frappe New Exception collected with id: 2024-01-17 17:26:22.429336-127.0.0.1-301
+Site: site3.local
+Form Dict: {'doc': '{"name":"LIB-TRXN105","owner":"Administrator","creation":"2024-01-17 17:05:06.611920","modified":"2024-01-17 17:08:07.458351","modified_by":"Administrator","docstatus":0,"idx":0,"article":"ARTICLE-100","article_name":"Spider-Man","member_id":"MEM-2024-102","member_name":"Naveen G","membership_type":"GOLD","transaction_type":"Issue","issue_date":"2024-01-01","return_date":"2024-01-06","due_date":"2024-01-04","amount_paid":0,"doctype":"Library Transaction","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-17 18:20:00,893 ERROR frappe New Exception collected with id: 2024-01-17 18:20:00.738763-127.0.0.1-ec6
+Site: site3.local
+Form Dict: {'doc': '{"name":"MSH-2024-106","owner":"Administrator","creation":"2024-01-17 18:02:57.331190","modified":"2024-01-17 18:15:30.702240","modified_by":"Administrator","docstatus":0,"idx":0,"member_id":"MEM-2024-102","member_name":"Naveen G","membership_type":"Gold","amount_paid":0,"email_id":"Naveeng@gmail.com","phone_number":"+91-8487534873","member_from":"2019-06-26","doctype":"Library Membership","maximum_number_of_books":10,"membership_period":12,"membership_amount":1000,"__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-17 18:46:58,623 ERROR frappe New Exception collected with id: 2024-01-17 18:46:58.295193-127.0.0.1-a4b
+Site: site3.local
+Form Dict: {'doc': '{"name":"LIB-TRXN105","owner":"Administrator","creation":"2024-01-17 17:05:06.611920","modified":"2024-01-17 17:40:53.436908","modified_by":"Administrator","docstatus":0,"idx":0,"article":"ARTICLE-100","article_name":"Spider-Man","member_id":"MEM-2024-102","member_name":"Naveen G","membership_type":"GOLD","transaction_type":"Issue","return_date":"2024-01-05","amount_paid":0,"doctype":"Library Transaction","__last_sync_on":"2024-01-18T05:38:04.056Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-17 19:01:45,031 ERROR frappe New Exception collected with id: 2024-01-17 19:01:44.893628-127.0.0.1-07d
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Library Transaction","name":"new-library-transaction-pugjgsewoz","__islocal":1,"__unsaved":1,"owner":"Administrator","transaction_type":"Issue","amount_paid":0,"issue_date":"2024-01-02"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-17 19:01:50,907 ERROR frappe New Exception collected with id: 2024-01-17 19:01:50.889686-127.0.0.1-4a8
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Library Transaction","name":"new-library-transaction-pugjgsewoz","__islocal":1,"__unsaved":1,"owner":"Administrator","transaction_type":"Issue","amount_paid":0,"issue_date":"2024-01-02"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-17 19:04:30,101 ERROR frappe New Exception collected with id: 2024-01-17 19:04:30.051020-127.0.0.1-f53
+Site: site3.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Library Transaction","name":"new-library-transaction-pugjgsewoz","__islocal":1,"__unsaved":1,"owner":"Administrator","transaction_type":"Issue","amount_paid":0,"issue_date":"2024-01-02"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-17 19:34:00,791 ERROR frappe New Exception collected with id: 2024-01-17 19:34:00.628321-127.0.0.1-506
+Site: site3.local
+Form Dict: {'doctype': 'Library Settings', 'filters': 'loan_period', 'cmd': 'frappe.client.get_value'}
+2024-01-17 23:45:39,648 ERROR frappe New Exception collected with id: 2024-01-17 23:45:39.456319-127.0.0.1-a4e
+Site: site3.local
+Form Dict: {'doc': '{"name":"LIB-TRXN107","owner":"Administrator","creation":"2024-01-17 19:15:31.223440","modified":"2024-01-17 23:43:33.884647","modified_by":"Administrator","docstatus":0,"idx":0,"transaction_type":"Issue","issue_date":"2024-01-12","return_date":"2024-01-20","amount_paid":0,"doctype":"Library Transaction","due_date":"2024-01-18","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-01-18 00:12:07,131 ERROR frappe New Exception collected with id: 2024-01-18 00:12:06.985632-127.0.0.1-11c
+Site: site3.local
+Form Dict: {'doc': '{"name":"LIB-TRXN107","owner":"Administrator","creation":"2024-01-17 19:15:31.223440","modified":"2024-01-18 00:05:58.156419","modified_by":"Administrator","docstatus":0,"idx":0,"transaction_type":"Issue","issue_date":"2024-01-12","return_date":"2024-01-19","due_date":"2024-01-18","amount_paid":0,"doctype":"Library Transaction","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
